@@ -5,87 +5,87 @@ import { ArrowRight, Calendar, Clock, User, Tag } from "lucide-react";
 
 const featuredPost = {
   id: 1,
-  title: "The Hidden Costs of Bottled Water in Restaurants: A Comprehensive Analysis",
-  excerpt: "Discover the true cost of bottled water for your restaurant, including storage, logistics, environmental impact, and how switching to filtered systems can transform your bottom line.",
+  title: "Les Coûts Cachés de l'Eau en Bouteille dans les Restaurants : Une Analyse Complète",
+  excerpt: "Découvrez le véritable coût de l'eau en bouteille pour votre restaurant, incluant stockage, logistique, impact environnemental, et comment le passage aux systèmes filtrés peut transformer votre résultat net.",
   image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=500&fit=crop",
   author: "Marie Laurent",
-  date: "November 25, 2024",
-  readTime: "8 min read",
-  category: "Cost Savings",
+  date: "25 novembre 2024",
+  readTime: "8 min de lecture",
+  category: "Économies",
 };
 
 const posts = [
   {
     id: 2,
-    title: "5 Ways to Reduce Your Restaurant's Carbon Footprint",
-    excerpt: "Practical steps to make your establishment more environmentally friendly, starting with water management.",
+    title: "5 Façons de Réduire l'Empreinte Carbone de Votre Restaurant",
+    excerpt: "Étapes pratiques pour rendre votre établissement plus respectueux de l'environnement, en commençant par la gestion de l'eau.",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
     author: "Pierre Dumont",
-    date: "November 20, 2024",
-    readTime: "5 min read",
-    category: "Sustainability",
+    date: "20 novembre 2024",
+    readTime: "5 min de lecture",
+    category: "Développement Durable",
   },
   {
     id: 3,
-    title: "HACCP Compliance: Water Safety Standards for Food Service",
-    excerpt: "Understanding the hygiene regulations for water dispensing systems in the hospitality industry.",
+    title: "Conformité HACCP : Normes de Sécurité de l'Eau pour la Restauration",
+    excerpt: "Comprendre les réglementations d'hygiène pour les systèmes de distribution d'eau dans l'industrie hôtelière.",
     image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=400&h=300&fit=crop",
     author: "Dr. Sophie Martin",
-    date: "November 15, 2024",
-    readTime: "7 min read",
-    category: "Compliance",
+    date: "15 novembre 2024",
+    readTime: "7 min de lecture",
+    category: "Conformité",
   },
   {
     id: 4,
-    title: "Sparkling Water Trends: What Customers Really Want",
-    excerpt: "New research reveals growing demand for sparkling water in restaurants and how to capitalize on it.",
+    title: "Tendances Eau Gazeuse : Ce Que Veulent Vraiment les Clients",
+    excerpt: "Une nouvelle étude révèle la demande croissante d'eau gazeuse dans les restaurants et comment en tirer parti.",
     image: "https://images.unsplash.com/photo-1527816106925-f3df4fa4a3f4?w=400&h=300&fit=crop",
     author: "Antoine Mercier",
-    date: "November 10, 2024",
-    readTime: "4 min read",
-    category: "Trends",
+    date: "10 novembre 2024",
+    readTime: "4 min de lecture",
+    category: "Tendances",
   },
   {
     id: 5,
-    title: "Hotel Water Strategy: From Rooms to Restaurants",
-    excerpt: "A comprehensive guide to implementing water solutions across all hotel departments.",
+    title: "Stratégie Eau pour Hôtels : Des Chambres aux Restaurants",
+    excerpt: "Un guide complet pour implémenter des solutions d'eau dans tous les départements hôteliers.",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop",
     author: "Claire Bernard",
-    date: "November 5, 2024",
-    readTime: "10 min read",
-    category: "Hotels",
+    date: "5 novembre 2024",
+    readTime: "10 min de lecture",
+    category: "Hôtellerie",
   },
   {
     id: 6,
-    title: "The Science of Perfect Water: Filtration Explained",
-    excerpt: "Understand how modern filtration technology works and why it matters for taste and safety.",
+    title: "La Science de l'Eau Parfaite : La Filtration Expliquée",
+    excerpt: "Comprenez comment fonctionne la technologie de filtration moderne et pourquoi elle compte pour le goût et la sécurité.",
     image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop",
     author: "Dr. Jean-Paul Rousseau",
-    date: "October 28, 2024",
-    readTime: "6 min read",
-    category: "Technology",
+    date: "28 octobre 2024",
+    readTime: "6 min de lecture",
+    category: "Technologie",
   },
   {
     id: 7,
-    title: "Customer Experience: Why Water Matters More Than You Think",
-    excerpt: "How the quality of water you serve impacts guest satisfaction and reviews.",
+    title: "Expérience Client : Pourquoi l'Eau Compte Plus Que Vous Ne Le Pensez",
+    excerpt: "Comment la qualité de l'eau que vous servez impacte la satisfaction des clients et les avis.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop",
     author: "Marie Laurent",
-    date: "October 22, 2024",
-    readTime: "5 min read",
-    category: "Customer Experience",
+    date: "22 octobre 2024",
+    readTime: "5 min de lecture",
+    category: "Expérience Client",
   },
 ];
 
 const categories = [
-  "All Posts",
-  "Cost Savings",
-  "Sustainability",
-  "Technology",
-  "Compliance",
-  "Trends",
-  "Hotels",
-  "Customer Experience",
+  "Tous les Articles",
+  "Économies",
+  "Développement Durable",
+  "Technologie",
+  "Conformité",
+  "Tendances",
+  "Hôtellerie",
+  "Expérience Client",
 ];
 
 const Blog = () => {
@@ -96,15 +96,15 @@ const Blog = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              AquaPure Blog
+              Blog Idra
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Insights for{" "}
-              <span className="text-gradient-ocean">Hospitality Professionals</span>
+              Actualités pour les{" "}
+              <span className="text-gradient-ocean">Professionnels de l'Hôtellerie</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Expert articles on water solutions, cost optimization, sustainability, 
-              and the latest trends in the hospitality industry.
+              Articles experts sur les solutions d'eau, l'optimisation des coûts, le développement durable 
+              et les dernières tendances de l'industrie hôtelière.
             </p>
           </div>
         </div>
@@ -141,7 +141,7 @@ const Blog = () => {
                 className="w-full h-80 lg:h-[450px] object-cover"
               />
               <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
-                Featured
+                À la Une
               </span>
             </div>
 
@@ -173,7 +173,7 @@ const Blog = () => {
               </div>
 
               <Button variant="ocean" size="lg">
-                Read Full Article
+                Lire l'Article Complet
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </div>
@@ -185,7 +185,7 @@ const Blog = () => {
       <section className="section-padding bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-2xl font-bold text-foreground mb-8">
-            Latest Articles
+            Derniers Articles
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -225,7 +225,7 @@ const Blog = () => {
           {/* Load More */}
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
-              Load More Articles
+              Charger Plus d'Articles
             </Button>
           </div>
         </div>
@@ -236,20 +236,20 @@ const Blog = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-primary via-primary/95 to-secondary rounded-3xl p-8 lg:p-16 text-center">
             <h2 className="font-display text-2xl lg:text-3xl font-bold text-primary-foreground mb-4">
-              Stay Updated with Industry Insights
+              Restez Informé des Actualités du Secteur
             </h2>
             <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
-              Subscribe to our newsletter for the latest trends, tips, and news 
-              in hospitality water solutions.
+              Abonnez-vous à notre newsletter pour les dernières tendances, conseils et actualités 
+              sur les solutions d'eau pour l'hôtellerie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Entrez votre email"
                 className="flex-1 px-6 py-4 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground/50"
               />
               <Button variant="cta" size="lg">
-                Subscribe
+                S'abonner
               </Button>
             </div>
           </div>

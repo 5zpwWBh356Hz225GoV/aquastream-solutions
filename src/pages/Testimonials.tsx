@@ -7,88 +7,88 @@ const testimonials = [
   {
     id: 1,
     name: "Jean-Pierre Dubois",
-    role: "Executive Chef & Owner",
+    role: "Chef Exécutif & Propriétaire",
     company: "Le Petit Bistro",
     location: "Paris",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
-    quote: "Switching to AquaPure was one of the best decisions for our restaurant. We save over €12,000 per year and our guests love the quality of both still and sparkling water. The installation was seamless and the support is excellent.",
+    quote: "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12 000€ par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
     rating: 5,
-    savings: "€12,400/year",
+    savings: "12 400€/an",
     type: "Restaurant",
     icon: Utensils,
   },
   {
     id: 2,
     name: "Sophie Laurent",
-    role: "Hotel General Manager",
-    company: "Grand Hotel Riviera",
+    role: "Directrice Générale d'Hôtel",
+    company: "Grand Hôtel Riviera",
     location: "Nice",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
-    quote: "Managing water logistics for a 200-room hotel was a nightmare. AquaPure eliminated the storage problem entirely. No more pallets, no more delivery schedules. Our sustainability report has never looked better.",
+    quote: "Gérer la logistique de l'eau pour un hôtel de 200 chambres était un cauchemar. Idra a éliminé complètement le problème de stockage. Plus de palettes, plus de calendriers de livraison. Notre rapport développement durable n'a jamais été aussi bon.",
     rating: 5,
-    savings: "€28,000/year",
-    type: "Hotel",
+    savings: "28 000€/an",
+    type: "Hôtel",
     icon: Hotel,
   },
   {
     id: 3,
     name: "Marco Rossi",
-    role: "Owner",
+    role: "Propriétaire",
     company: "Café Milano",
     location: "Lyon",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    quote: "As a small café, every euro counts. The compact countertop model fits perfectly in our space and pays for itself within months. Customers appreciate that we're eco-friendly too.",
+    quote: "En tant que petit café, chaque euro compte. Le modèle compact de comptoir s'intègre parfaitement dans notre espace et se rentabilise en quelques mois. Les clients apprécient que nous soyons éco-responsables.",
     rating: 5,
-    savings: "€4,200/year",
+    savings: "4 200€/an",
     type: "Café",
     icon: Coffee,
   },
   {
     id: 4,
     name: "Claire Bernard",
-    role: "F&B Director",
+    role: "Directrice F&B",
     company: "Château Events",
     location: "Bordeaux",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
-    quote: "For our wedding and event venue, presentation is everything. The elegant tower design impresses guests while the unlimited capacity handles even our largest events without a hitch.",
+    quote: "Pour notre lieu de réception de mariages et événements, la présentation est primordiale. Le design élégant de la tour impressionne les invités tandis que la capacité illimitée gère même nos plus grands événements sans problème.",
     rating: 5,
-    savings: "€18,500/year",
-    type: "Events",
+    savings: "18 500€/an",
+    type: "Événementiel",
     icon: Building,
   },
   {
     id: 5,
     name: "Antoine Mercier",
-    role: "Restaurant Manager",
+    role: "Directeur de Restaurant",
     company: "La Table du Chef",
     location: "Marseille",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    quote: "The water quality is exceptional. Our sommelier noticed how well it pairs with our wine selections. Guests frequently comment on the purity and refreshing taste.",
+    quote: "La qualité de l'eau est exceptionnelle. Notre sommelier a remarqué à quel point elle se marie bien avec nos sélections de vins. Les clients commentent fréquemment la pureté et la fraîcheur de l'eau.",
     rating: 5,
-    savings: "€9,800/year",
+    savings: "9 800€/an",
     type: "Restaurant",
     icon: Utensils,
   },
   {
     id: 6,
     name: "Marie Dupont",
-    role: "Operations Director",
+    role: "Directrice des Opérations",
     company: "Hôtel de la Plage",
     location: "Cannes",
     image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=150&h=150&fit=crop&crop=face",
-    quote: "We installed AquaPure systems in our restaurant, spa, and conference rooms. The unified approach simplified everything. One supplier, one support team, one invoice.",
+    quote: "Nous avons installé des systèmes Idra dans notre restaurant, spa et salles de conférence. L'approche unifiée a tout simplifié. Un seul fournisseur, une seule équipe de support, une seule facture.",
     rating: 5,
-    savings: "€35,000/year",
-    type: "Hotel",
+    savings: "35 000€/an",
+    type: "Hôtel",
     icon: Hotel,
   },
 ];
 
 const stats = [
-  { value: "500+", label: "Happy Clients" },
-  { value: "€2.5M+", label: "Total Savings Generated" },
-  { value: "25M+", label: "Bottles Eliminated" },
-  { value: "98%", label: "Client Satisfaction" },
+  { value: "500+", label: "Clients Satisfaits" },
+  { value: "2,5M€+", label: "Économies Totales Générées" },
+  { value: "25M+", label: "Bouteilles Éliminées" },
+  { value: "98%", label: "Satisfaction Client" },
 ];
 
 const Testimonials = () => {
@@ -99,15 +99,15 @@ const Testimonials = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              Success Stories
+              Témoignages Clients
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              What Our Clients{" "}
-              <span className="text-gradient-ocean">Say About Us</span>
+              Ce Que Nos Clients{" "}
+              <span className="text-gradient-ocean">Disent de Nous</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Real stories from restaurants, hotels, and cafés across France who have 
-              transformed their water service with AquaPure.
+              Histoires vraies de restaurants, hôtels et cafés à travers la France qui ont 
+              transformé leur service d'eau avec Idra.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ const Testimonials = () => {
                     {testimonial.type}
                   </div>
                   <span className="px-3 py-1 rounded-full bg-success/10 text-success text-sm font-semibold">
-                    Saving {testimonial.savings}
+                    Économie {testimonial.savings}
                   </span>
                 </div>
               </div>
@@ -186,10 +186,10 @@ const Testimonials = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              See AquaPure in Action
+              Découvrez Idra en Action
             </h2>
             <p className="text-muted-foreground">
-              Watch how our clients have integrated AquaPure into their establishments.
+              Regardez comment nos clients ont intégré Idra dans leurs établissements.
             </p>
           </div>
 
@@ -198,10 +198,10 @@ const Testimonials = () => {
               <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-primary border-b-8 border-b-transparent ml-1" />
             </div>
             <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-              Client Video Testimonials Coming Soon
+              Témoignages Vidéo Bientôt Disponibles
             </h3>
             <p className="text-muted-foreground">
-              We're currently filming success stories at our client locations.
+              Nous filmons actuellement des témoignages chez nos clients.
             </p>
           </div>
         </div>
@@ -211,14 +211,14 @@ const Testimonials = () => {
       <section className="section-padding bg-gradient-to-br from-primary via-primary/95 to-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
-            Join Our Success Stories
+            Rejoignez Nos Success Stories
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Be the next establishment to transform your water service and start saving.
+            Soyez le prochain établissement à transformer son service d'eau et commencez à économiser.
           </p>
           <Link to="/contact">
             <Button variant="cta" size="xl">
-              Get Your Free Quote
+              Obtenir Votre Devis Gratuit
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>

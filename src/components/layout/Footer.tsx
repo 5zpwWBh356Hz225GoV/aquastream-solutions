@@ -3,21 +3,21 @@ import { Droplets, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram }
 
 const footerLinks = {
   products: [
-    { name: "Sparkling Water Dispensers", href: "/products/sparkling" },
-    { name: "Filtered Water Systems", href: "/products/filtered" },
-    { name: "High-Capacity Solutions", href: "/products/high-capacity" },
-    { name: "All Products", href: "/products" },
+    { name: "Fontaines Eau Gazeuse", href: "/products/sparkling" },
+    { name: "Systèmes Eau Filtrée", href: "/products/filtered" },
+    { name: "Solutions Grande Capacité", href: "/products/high-capacity" },
+    { name: "Tous les Produits", href: "/products" },
   ],
   company: [
-    { name: "About Us", href: "/about" },
-    { name: "Our Technology", href: "/technology" },
-    { name: "Testimonials", href: "/testimonials" },
+    { name: "À Propos", href: "/about" },
+    { name: "Notre Technologie", href: "/technology" },
+    { name: "Témoignages", href: "/testimonials" },
     { name: "Blog", href: "/blog" },
   ],
   support: [
     { name: "Contact", href: "/contact" },
     { name: "FAQ", href: "/faq" },
-    { name: "Technical Support", href: "/support" },
+    { name: "Support Technique", href: "/support" },
     { name: "Maintenance", href: "/maintenance" },
   ],
 };
@@ -42,21 +42,21 @@ export function Footer() {
                 <Droplets className="w-6 h-6 text-primary-foreground" />
               </div>
               <span className="font-display font-bold text-xl">
-                Aqua<span className="text-water-medium">Pure</span>
+                Idra
               </span>
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              Premium filtered and sparkling water solutions for restaurants, hotels, and cafés. 
-              Save money, reduce environmental impact, and delight your customers.
+              Solutions premium d'eau filtrée et gazeuse pour restaurants, hôtels et cafés. 
+              Économisez, réduisez votre impact environnemental et ravissez vos clients.
             </p>
             <div className="space-y-3">
               <a href="tel:+33123456789" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>+33 1 23 45 67 89</span>
               </a>
-              <a href="mailto:contact@aquapure.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a href="mailto:contact@idra.fr" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 <Mail className="w-5 h-5" />
-                <span>contact@aquapure.com</span>
+                <span>contact@idra.fr</span>
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5" />
@@ -67,7 +67,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Products</h3>
+            <h3 className="font-display font-semibold text-lg mb-4">Produits</h3>
             <ul className="space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.name}>
@@ -84,7 +84,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Company</h3>
+            <h3 className="font-display font-semibold text-lg mb-4">Entreprise</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
@@ -123,7 +123,7 @@ export function Footer() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © {new Date().getFullYear()} AquaPure. All rights reserved.
+              © {new Date().getFullYear()} Idra. Tous droits réservés.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (
