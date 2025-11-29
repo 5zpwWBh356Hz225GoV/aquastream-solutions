@@ -8,34 +8,34 @@ import freestandingImage from "@/assets/product-freestanding.jpg";
 const products = [
   {
     id: "sparkling",
-    name: "AquaPure Sparkle",
-    tagline: "Countertop Excellence",
-    description: "Compact countertop unit perfect for cafés and small restaurants. Delivers still, sparkling, and chilled water.",
+    name: "Idra Sparkle",
+    tagline: "Excellence Comptoir",
+    description: "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate, gazeuse et fraîche.",
     image: sparklingImage,
-    features: ["Still & Sparkling", "40L/hour capacity", "Compact design", "Touch controls"],
-    price: "From €89/month",
-    badge: "Most Popular",
+    features: ["Plate & Gazeuse", "Capacité 40L/heure", "Design compact", "Commandes tactiles"],
+    price: "À partir de 89€/mois",
+    badge: "Le Plus Populaire",
     href: "/products/sparkling",
   },
   {
     id: "undercounter",
-    name: "AquaPure Pro",
-    tagline: "Undercounter Power",
-    description: "High-capacity undercounter system for busy restaurants and hotels. Maximum output with minimal footprint.",
+    name: "Idra Pro",
+    tagline: "Puissance Sous-Comptoir",
+    description: "Système sous-comptoir haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
     image: undercounterImage,
-    features: ["120L/hour capacity", "Multiple taps", "Remote monitoring", "Auto-cleaning"],
-    price: "From €149/month",
-    badge: "Best Value",
+    features: ["Capacité 120L/heure", "Plusieurs robinets", "Monitoring à distance", "Auto-nettoyant"],
+    price: "À partir de 149€/mois",
+    badge: "Meilleur Rapport Qualité-Prix",
     href: "/products/filtered",
   },
   {
     id: "freestanding",
-    name: "AquaPure Tower",
-    tagline: "Elegant Statement",
-    description: "Freestanding tower design for high-end establishments. Makes a visual statement while delivering premium water.",
+    name: "Idra Tower",
+    tagline: "Élégance Sur Pied",
+    description: "Design tour sur pied pour établissements haut de gamme. Une déclaration visuelle tout en délivrant une eau premium.",
     image: freestandingImage,
-    features: ["Hot, cold & sparkling", "Designer finish", "180L/hour capacity", "Staff & guest modes"],
-    price: "From €199/month",
+    features: ["Chaude, froide & gazeuse", "Finition design", "Capacité 180L/heure", "Modes personnel & client"],
+    price: "À partir de 199€/mois",
     badge: "Premium",
     href: "/products/high-capacity",
   },
@@ -48,15 +48,15 @@ export function ProductsPreview() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-semibold mb-4">
-            Our Products
+            Nos Produits
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Solutions for Every{" "}
-            <span className="text-gradient-ocean">Establishment</span>
+            Des Solutions pour Chaque{" "}
+            <span className="text-gradient-ocean">Établissement</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From intimate cafés to large hotel chains, we have the perfect water dispensing solution 
-            tailored to your needs and budget.
+            Des cafés intimistes aux grandes chaînes hôtelières, nous avons la solution de distribution d'eau 
+            parfaitement adaptée à vos besoins et votre budget.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export function ProductsPreview() {
                   </div>
                   <Link to={product.href}>
                     <Button variant="outline" size="sm">
-                      Learn More
+                      En Savoir Plus
                       <ArrowRight className="w-4 h-4" />
                     </Button>
                   </Link>
@@ -122,7 +122,7 @@ export function ProductsPreview() {
         <div className="text-center mt-12">
           <Link to="/products">
             <Button variant="ocean" size="lg">
-              View All Products
+              Voir Tous les Produits
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>

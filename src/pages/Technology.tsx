@@ -16,55 +16,55 @@ import {
 const filtrationStages = [
   {
     stage: 1,
-    name: "Sediment Filter",
-    description: "Removes particles, rust, and sand larger than 5 microns, protecting subsequent filters and equipment.",
+    name: "Filtre à Sédiments",
+    description: "Élimine les particules, la rouille et le sable de plus de 5 microns, protégeant les filtres suivants et l'équipement.",
     icon: Filter,
   },
   {
     stage: 2,
-    name: "Activated Carbon",
-    description: "Eliminates chlorine, organic compounds, and unpleasant tastes and odors for pure, clean water.",
+    name: "Charbon Actif",
+    description: "Élimine le chlore, les composés organiques et les goûts et odeurs désagréables pour une eau pure et propre.",
     icon: Droplets,
   },
   {
     stage: 3,
-    name: "Reverse Osmosis",
-    description: "Ultra-fine membrane filters out dissolved solids, heavy metals, and contaminants to 0.0001 microns.",
+    name: "Osmose Inverse",
+    description: "Membrane ultra-fine filtrant les solides dissous, métaux lourds et contaminants jusqu'à 0,0001 micron.",
     icon: Sparkles,
   },
   {
     stage: 4,
-    name: "Mineral Enhancement",
-    description: "Reintroduces optimal mineral balance for perfect taste and health benefits.",
+    name: "Enrichissement Minéral",
+    description: "Réintroduit un équilibre minéral optimal pour un goût parfait et des bienfaits pour la santé.",
     icon: Thermometer,
   },
   {
     stage: 5,
-    name: "UV Sterilization",
-    description: "Destroys 99.99% of bacteria and viruses with ultraviolet light for microbiological safety.",
+    name: "Stérilisation UV",
+    description: "Détruit 99,99% des bactéries et virus par lumière ultraviolette pour une sécurité microbiologique totale.",
     icon: ShieldCheck,
   },
 ];
 
 const certifications = [
   {
-    name: "HACCP Certified",
-    description: "Meets food safety management system requirements",
+    name: "Certifié HACCP",
+    description: "Répond aux exigences du système de gestion de la sécurité alimentaire",
     icon: ShieldCheck,
   },
   {
     name: "ISO 9001:2015",
-    description: "Quality management system certified",
+    description: "Système de management de la qualité certifié",
     icon: Gauge,
   },
   {
     name: "NSF/ANSI 42 & 53",
-    description: "Drinking water treatment units standards",
+    description: "Normes pour unités de traitement d'eau potable",
     icon: Droplets,
   },
   {
-    name: "CE Marked",
-    description: "Compliant with EU health, safety, and environmental requirements",
+    name: "Marquage CE",
+    description: "Conforme aux exigences européennes de santé, sécurité et environnement",
     icon: Leaf,
   },
 ];
@@ -72,23 +72,23 @@ const certifications = [
 const features = [
   {
     icon: Wifi,
-    title: "Smart Monitoring",
-    description: "Real-time monitoring via our app tracks water usage, filter status, and system health. Receive alerts before issues arise.",
+    title: "Monitoring Intelligent",
+    description: "Surveillance en temps réel via notre application : consommation d'eau, état des filtres et santé du système. Recevez des alertes avant que les problèmes ne surviennent.",
   },
   {
     icon: ShieldCheck,
-    title: "Auto-Cleaning",
-    description: "Automatic sanitization cycles keep your system hygienic without manual intervention. Scheduled during off-hours.",
+    title: "Auto-Nettoyage",
+    description: "Cycles de désinfection automatiques maintenant votre système hygiénique sans intervention manuelle. Programmés pendant les heures creuses.",
   },
   {
     icon: Gauge,
-    title: "Pressure Optimization",
-    description: "Intelligent pressure management ensures consistent flow rates regardless of demand or building water pressure.",
+    title: "Optimisation Pression",
+    description: "Gestion intelligente de la pression assurant des débits constants quelle que soit la demande ou la pression d'eau du bâtiment.",
   },
   {
     icon: Thermometer,
-    title: "Temperature Control",
-    description: "Precise temperature management delivers perfectly chilled or ambient water, with optional hot water models.",
+    title: "Contrôle Température",
+    description: "Gestion précise de la température délivrant une eau parfaitement fraîche ou ambiante, avec modèles eau chaude optionnels.",
   },
 ];
 
@@ -100,15 +100,15 @@ const Technology = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              Our Technology
+              Notre Technologie
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Advanced Filtration,{" "}
-              <span className="text-gradient-ocean">Pure Results</span>
+              Filtration Avancée,{" "}
+              <span className="text-gradient-ocean">Résultats Purs</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Discover the engineering excellence behind every AquaPure system. 
-              Five stages of purification ensure every drop meets the highest standards.
+              Découvrez l'excellence technique derrière chaque système Idra. 
+              Cinq étapes de purification garantissent que chaque goutte répond aux plus hauts standards.
             </p>
           </div>
         </div>
@@ -119,11 +119,11 @@ const Technology = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              5-Stage Filtration System
+              Système de Filtration en 5 Étapes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Each stage targets specific contaminants, ensuring comprehensive purification 
-              while maintaining optimal mineral balance for taste.
+              Chaque étape cible des contaminants spécifiques, assurant une purification complète 
+              tout en maintenant un équilibre minéral optimal pour le goût.
             </p>
           </div>
 
@@ -166,15 +166,15 @@ const Technology = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-semibold mb-4">
-                Smart Technology
+                Technologie Intelligente
               </span>
               <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                Intelligent Systems for{" "}
-                <span className="text-gradient-ocean">Effortless Operation</span>
+                Systèmes Intelligents pour{" "}
+                <span className="text-gradient-ocean">Fonctionnement Sans Effort</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Our systems are designed to operate autonomously, monitoring themselves 
-                and alerting you only when attention is needed.
+                Nos systèmes sont conçus pour fonctionner de manière autonome, se surveillant eux-mêmes 
+                et vous alertant uniquement lorsqu'une attention est nécessaire.
               </p>
 
               <div className="space-y-6">
@@ -196,26 +196,26 @@ const Technology = () => {
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12 border border-border">
               <div className="bg-card rounded-2xl p-6 shadow-soft mb-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-semibold text-foreground">System Status</span>
-                  <span className="px-3 py-1 rounded-full bg-success/10 text-success text-sm font-medium">Online</span>
+                  <span className="font-semibold text-foreground">État du Système</span>
+                  <span className="px-3 py-1 rounded-full bg-success/10 text-success text-sm font-medium">En ligne</span>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Filter Life</span>
+                    <span className="text-muted-foreground">Durée de Vie Filtre</span>
                     <div className="w-32 h-2 bg-muted rounded-full overflow-hidden">
                       <div className="w-3/4 h-full bg-success rounded-full" />
                     </div>
                     <span className="text-sm font-medium text-foreground">75%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">CO2 Level</span>
+                    <span className="text-muted-foreground">Niveau CO2</span>
                     <div className="w-32 h-2 bg-muted rounded-full overflow-hidden">
                       <div className="w-1/2 h-full bg-primary rounded-full" />
                     </div>
                     <span className="text-sm font-medium text-foreground">50%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Today's Usage</span>
+                    <span className="text-muted-foreground">Consommation du Jour</span>
                     <span className="text-sm font-medium text-foreground">127L</span>
                   </div>
                 </div>
@@ -223,8 +223,8 @@ const Technology = () => {
 
               <div className="bg-card rounded-2xl p-6 shadow-soft">
                 <div className="text-center">
-                  <div className="text-4xl font-display font-bold text-primary mb-1">99.9%</div>
-                  <div className="text-muted-foreground">Filtration Efficiency</div>
+                  <div className="text-4xl font-display font-bold text-primary mb-1">99,9%</div>
+                  <div className="text-muted-foreground">Efficacité de Filtration</div>
                 </div>
               </div>
             </div>
@@ -237,14 +237,14 @@ const Technology = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-2 rounded-full bg-success/10 text-success text-sm font-semibold mb-4">
-              Quality Assured
+              Qualité Garantie
             </span>
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              Certifications & Standards
+              Certifications & Normes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Every AquaPure system meets or exceeds international standards for 
-              water treatment, safety, and quality management.
+              Chaque système Idra respecte ou dépasse les normes internationales 
+              de traitement de l'eau, de sécurité et de management de la qualité.
             </p>
           </div>
 
@@ -269,14 +269,14 @@ const Technology = () => {
       <section className="section-padding bg-gradient-to-br from-primary via-primary/95 to-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
-            Experience the Technology Difference
+            Découvrez la Différence Technologique
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Schedule a demonstration and see our filtration technology in action.
+            Planifiez une démonstration et voyez notre technologie de filtration en action.
           </p>
           <Link to="/contact">
             <Button variant="cta" size="xl">
-              Book a Demo
+              Réserver une Démo
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>

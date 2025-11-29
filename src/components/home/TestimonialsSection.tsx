@@ -6,42 +6,42 @@ const testimonials = [
   {
     id: 1,
     name: "Jean-Pierre Dubois",
-    role: "Executive Chef & Owner",
+    role: "Chef Exécutif & Propriétaire",
     company: "Le Petit Bistro, Paris",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
-    quote: "Switching to AquaPure was one of the best decisions for our restaurant. We save over €12,000 per year and our guests love the quality of both still and sparkling water. The installation was seamless and the support is excellent.",
+    quote: "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12 000€ par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
     rating: 5,
-    savings: "€12,400/year",
+    savings: "12 400€/an",
   },
   {
     id: 2,
     name: "Sophie Laurent",
-    role: "Hotel General Manager",
-    company: "Grand Hotel Riviera, Nice",
+    role: "Directrice Générale d'Hôtel",
+    company: "Grand Hôtel Riviera, Nice",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
-    quote: "Managing water logistics for a 200-room hotel was a nightmare. AquaPure eliminated the storage problem entirely. No more pallets, no more delivery schedules. Our sustainability report has never looked better.",
+    quote: "Gérer la logistique de l'eau pour un hôtel de 200 chambres était un cauchemar. Idra a éliminé complètement le problème de stockage. Plus de palettes, plus de calendriers de livraison. Notre rapport développement durable n'a jamais été aussi bon.",
     rating: 5,
-    savings: "€28,000/year",
+    savings: "28 000€/an",
   },
   {
     id: 3,
     name: "Marco Rossi",
-    role: "Owner",
+    role: "Propriétaire",
     company: "Café Milano, Lyon",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    quote: "As a small café, every euro counts. The compact countertop model fits perfectly in our space and pays for itself within months. Customers appreciate that we're eco-friendly too.",
+    quote: "En tant que petit café, chaque euro compte. Le modèle compact de comptoir s'intègre parfaitement dans notre espace et se rentabilise en quelques mois. Les clients apprécient que nous soyons éco-responsables.",
     rating: 5,
-    savings: "€4,200/year",
+    savings: "4 200€/an",
   },
   {
     id: 4,
     name: "Claire Bernard",
-    role: "F&B Director",
+    role: "Directrice F&B",
     company: "Château Events, Bordeaux",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
-    quote: "For our wedding and event venue, presentation is everything. The elegant tower design impresses guests while the unlimited capacity handles even our largest events without a hitch.",
+    quote: "Pour notre lieu de réception de mariages et événements, la présentation est primordiale. Le design élégant de la tour impressionne les invités tandis que la capacité illimitée gère même nos plus grands événements sans problème.",
     rating: 5,
-    savings: "€18,500/year",
+    savings: "18 500€/an",
   },
 ];
 
@@ -73,15 +73,15 @@ export function TestimonialsSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-            Success Stories
+            Témoignages Clients
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Trusted by{" "}
-            <span className="text-gradient-ocean">Industry Leaders</span>
+            La Confiance des{" "}
+            <span className="text-gradient-ocean">Leaders du Secteur</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Discover how restaurants, hotels, and cafés across France have transformed 
-            their operations with AquaPure.
+            Découvrez comment les restaurants, hôtels et cafés à travers la France ont transformé 
+            leurs opérations avec Idra.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export function TestimonialsSection() {
                   
                   {/* Savings badge */}
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-success/10 text-success font-semibold">
-                    <span>Saving</span>
+                    <span>Économie</span>
                     <span className="text-lg">{current.savings}</span>
                   </div>
                 </div>
@@ -179,10 +179,10 @@ export function TestimonialsSection() {
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {[
-            { value: "500+", label: "Happy Clients" },
-            { value: "€2.5M+", label: "Total Savings Generated" },
-            { value: "25M+", label: "Bottles Eliminated" },
-            { value: "98%", label: "Client Satisfaction" },
+            { value: "500+", label: "Clients Satisfaits" },
+            { value: "2,5M€+", label: "Économies Totales Générées" },
+            { value: "25M+", label: "Bouteilles Éliminées" },
+            { value: "98%", label: "Satisfaction Client" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl lg:text-4xl font-display font-bold text-primary mb-2">

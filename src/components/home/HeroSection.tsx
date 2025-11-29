@@ -31,38 +31,38 @@ export function HeroSection() {
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 mb-6 animate-fade-in">
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-medium">Premium Water Solutions for Professionals</span>
+              <span className="text-sm font-medium">Solutions d'Eau Premium pour Professionnels</span>
             </div>
             
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Pure Water,
+              Eau Pure,
               <br />
-              <span className="text-water-medium">Pure Savings</span>
+              <span className="text-water-medium">Économies Pures</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Transform your restaurant, hotel, or café with premium filtered and sparkling water. 
-              Just <strong className="text-primary-foreground">1 cent per liter</strong> — save thousands annually while delighting your guests.
+              Transformez votre restaurant, hôtel ou café avec une eau filtrée et gazeuse premium. 
+              Seulement <strong className="text-primary-foreground">1 centime par litre</strong> — économisez des milliers d'euros chaque année tout en ravissant vos clients.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Link to="/contact">
                 <Button variant="cta" size="xl" className="w-full sm:w-auto">
-                  Request a Free Quote
+                  Demander un Devis Gratuit
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/advantages">
                 <Button variant="hero" size="xl" className="w-full sm:w-auto">
                   <Play className="w-5 h-5" />
-                  Discover Our Advantages
+                  Découvrir Nos Avantages
                 </Button>
               </Link>
             </div>
 
             {/* Trust badges */}
             <div className="mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <p className="text-primary-foreground/60 text-sm mb-4">Trusted by leading hospitality brands</p>
+              <p className="text-primary-foreground/60 text-sm mb-4">Ils nous font confiance</p>
               <div className="flex flex-wrap gap-8 items-center">
                 <div className="text-primary-foreground/40 font-display font-bold text-xl">Hilton</div>
                 <div className="text-primary-foreground/40 font-display font-bold text-xl">Marriott</div>
@@ -81,20 +81,20 @@ export function HeroSection() {
               {/* Product image */}
               <img
                 src={heroImage}
-                alt="Premium AquaPure water dispenser for restaurants"
+                alt="Fontaine à eau premium Idra pour restaurants"
                 className="relative z-10 w-full max-w-lg mx-auto drop-shadow-2xl animate-float"
               />
               
               {/* Stats card */}
               <div className="absolute -bottom-4 -left-4 bg-card/90 backdrop-blur-xl rounded-2xl p-6 shadow-elevated animate-fade-in" style={{ animationDelay: "0.5s" }}>
                 <div className="text-4xl font-display font-bold text-primary mb-1">1¢</div>
-                <div className="text-muted-foreground text-sm">per liter</div>
+                <div className="text-muted-foreground text-sm">par litre</div>
               </div>
 
               {/* Eco badge */}
               <div className="absolute -top-4 -right-4 bg-success/90 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-elevated animate-fade-in" style={{ animationDelay: "0.6s" }}>
-                <div className="text-success-foreground font-semibold">Eco-Friendly</div>
-                <div className="text-success-foreground/80 text-sm">Zero plastic bottles</div>
+                <div className="text-success-foreground font-semibold">Éco-Responsable</div>
+                <div className="text-success-foreground/80 text-sm">Zéro bouteille plastique</div>
               </div>
             </div>
           </div>

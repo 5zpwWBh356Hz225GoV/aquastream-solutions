@@ -3,55 +3,55 @@ import { TrendingDown, Leaf, Truck, Award, Droplets, Shield } from "lucide-react
 const benefits = [
   {
     icon: TrendingDown,
-    title: "Significant Cost Savings",
-    description: "Just 1 cent per liter compared to €0.50+ for bottled water. Save up to €15,000 annually for a medium-sized restaurant.",
+    title: "Économies Significatives",
+    description: "Seulement 1 centime par litre contre 0,50€+ pour l'eau en bouteille. Économisez jusqu'à 15 000€ par an pour un restaurant moyen.",
     stat: "97%",
-    statLabel: "Cost Reduction",
+    statLabel: "Réduction des Coûts",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: Leaf,
-    title: "Environmental Impact",
-    description: "Eliminate plastic bottles completely. A single unit saves over 50,000 bottles per year from landfills and oceans.",
+    title: "Impact Environnemental",
+    description: "Éliminez complètement les bouteilles plastiques. Une seule unité permet d'économiser plus de 50 000 bouteilles par an.",
     stat: "50K+",
-    statLabel: "Bottles Saved/Year",
+    statLabel: "Bouteilles Économisées/An",
     color: "text-success",
     bgColor: "bg-success/10",
   },
   {
     icon: Truck,
-    title: "Zero Logistics Hassle",
-    description: "No more deliveries, pallets, or storage space needed. Free up valuable space and simplify your operations.",
+    title: "Zéro Contrainte Logistique",
+    description: "Plus de livraisons, de palettes ou d'espace de stockage nécessaire. Libérez de l'espace précieux et simplifiez vos opérations.",
     stat: "100%",
-    statLabel: "Logistics Eliminated",
+    statLabel: "Logistique Éliminée",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
   },
   {
     icon: Award,
-    title: "Premium Quality",
-    description: "Multi-stage filtration ensures crystal-clear water that enhances the taste of your beverages and dishes.",
-    stat: "5-Stage",
-    statLabel: "Filtration System",
+    title: "Qualité Premium",
+    description: "La filtration multi-étapes garantit une eau cristalline qui sublime le goût de vos boissons et de vos plats.",
+    stat: "5 Étapes",
+    statLabel: "Système de Filtration",
     color: "text-accent",
     bgColor: "bg-accent/10",
   },
   {
     icon: Droplets,
-    title: "Still & Sparkling",
-    description: "Offer both still and perfectly carbonated sparkling water on tap, customized to your guests' preferences.",
+    title: "Plate & Gazeuse",
+    description: "Proposez de l'eau plate et parfaitement gazéifiée au robinet, personnalisée selon les préférences de vos clients.",
     stat: "3",
-    statLabel: "Water Types",
+    statLabel: "Types d'Eau",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: Shield,
-    title: "Hygiene Certified",
-    description: "All systems meet the highest food-grade hygiene standards with automatic cleaning cycles and UV sterilization.",
+    title: "Certifié Hygiène",
+    description: "Tous nos systèmes répondent aux normes d'hygiène alimentaire les plus strictes avec cycles de nettoyage automatiques et stérilisation UV.",
     stat: "HACCP",
-    statLabel: "Certified",
+    statLabel: "Certifié",
     color: "text-success",
     bgColor: "bg-success/10",
   },
@@ -64,15 +64,15 @@ export function BenefitsSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-            Why Choose AquaPure
+            Pourquoi Choisir Idra
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            The Smart Choice for{" "}
-            <span className="text-gradient-ocean">Modern Hospitality</span>
+            Le Choix Intelligent pour{" "}
+            <span className="text-gradient-ocean">l'Hôtellerie Moderne</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join hundreds of restaurants, hotels, and cafés who have transformed their water service 
-            with significant savings and environmental benefits.
+            Rejoignez des centaines de restaurants, hôtels et cafés qui ont transformé leur service d'eau 
+            avec des économies significatives et des bénéfices environnementaux.
           </p>
         </div>
 

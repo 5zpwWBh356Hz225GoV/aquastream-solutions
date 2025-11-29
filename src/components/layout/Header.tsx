@@ -5,28 +5,28 @@ import { Menu, X, Droplets, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Accueil", href: "/" },
   { 
-    name: "Products", 
+    name: "Produits", 
     href: "/products",
     children: [
-      { name: "Sparkling Water Dispensers", href: "/products/sparkling" },
-      { name: "Filtered Water Systems", href: "/products/filtered" },
-      { name: "High-Capacity Solutions", href: "/products/high-capacity" },
+      { name: "Fontaines Eau Gazeuse", href: "/products/sparkling" },
+      { name: "Systèmes Eau Filtrée", href: "/products/filtered" },
+      { name: "Solutions Grande Capacité", href: "/products/high-capacity" },
     ]
   },
   { 
-    name: "Advantages", 
+    name: "Avantages", 
     href: "/advantages",
     children: [
-      { name: "Cost Savings", href: "/advantages#savings" },
-      { name: "Ecology", href: "/advantages#ecology" },
-      { name: "Logistics", href: "/advantages#logistics" },
-      { name: "Quality", href: "/advantages#quality" },
+      { name: "Économies", href: "/advantages#savings" },
+      { name: "Écologie", href: "/advantages#ecology" },
+      { name: "Logistique", href: "/advantages#logistics" },
+      { name: "Qualité", href: "/advantages#quality" },
     ]
   },
-  { name: "Technology", href: "/technology" },
-  { name: "Testimonials", href: "/testimonials" },
+  { name: "Technologie", href: "/technology" },
+  { name: "Témoignages", href: "/testimonials" },
   { name: "Blog", href: "/blog" },
 ];
 
@@ -50,7 +50,7 @@ export function Header() {
               <Droplets className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="font-display font-bold text-xl text-foreground">
-              Aqua<span className="text-primary">Pure</span>
+              Idra
             </span>
           </Link>
 
@@ -100,7 +100,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Link to="/contact">
               <Button variant="cta" size="lg">
-                Request a Quote
+                Demander un Devis
               </Button>
             </Link>
           </div>
@@ -152,7 +152,7 @@ export function Header() {
             <div className="mt-4 px-4">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button variant="cta" size="lg" className="w-full">
-                  Request a Quote
+                  Demander un Devis
                 </Button>
               </Link>
             </div>

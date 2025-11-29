@@ -9,77 +9,77 @@ import freestandingImage from "@/assets/product-freestanding.jpg";
 const products = [
   {
     id: "sparkling",
-    name: "AquaPure Sparkle",
-    tagline: "Perfect for Cafés & Small Restaurants",
-    description: "Our compact countertop solution delivers premium still and sparkling water without taking up valuable space. Ideal for establishments serving up to 150 covers daily.",
+    name: "Idra Sparkle",
+    tagline: "Parfait pour Cafés & Petits Restaurants",
+    description: "Notre solution compacte de comptoir délivre une eau plate et gazeuse premium sans prendre de place précieuse. Idéale pour les établissements servant jusqu'à 150 couverts par jour.",
     image: sparklingImage,
     features: [
-      "Still, sparkling, and chilled water",
-      "40 liters per hour capacity",
-      "Compact countertop design (40x35x50cm)",
-      "Touch-screen controls",
-      "5-stage filtration system",
-      "Automatic CO2 injection",
-      "Energy-efficient operation",
-      "Easy filter replacement",
+      "Eau plate, gazeuse et fraîche",
+      "Capacité de 40 litres par heure",
+      "Design compact de comptoir (40x35x50cm)",
+      "Commandes tactiles",
+      "Système de filtration 5 étapes",
+      "Injection automatique de CO2",
+      "Fonctionnement économe en énergie",
+      "Remplacement facile des filtres",
     ],
     specs: {
-      capacity: "40L/hour",
+      capacity: "40L/heure",
       dimensions: "40 x 35 x 50 cm",
       power: "220V / 300W",
-      co2: "2kg cylinder (included)",
+      co2: "Cylindre 2kg (inclus)",
     },
-    price: "€89/month",
-    badge: "Most Popular",
+    price: "89€/mois",
+    badge: "Le Plus Populaire",
   },
   {
     id: "filtered",
-    name: "AquaPure Pro",
-    tagline: "Ideal for Busy Restaurants & Small Hotels",
-    description: "High-capacity undercounter system designed for establishments with demanding water needs. Connects to multiple taps and offers remote monitoring capabilities.",
+    name: "Idra Pro",
+    tagline: "Idéal pour Restaurants Actifs & Petits Hôtels",
+    description: "Système sous-comptoir haute capacité conçu pour les établissements avec des besoins en eau importants. Se connecte à plusieurs robinets et offre des capacités de surveillance à distance.",
     image: undercounterImage,
     features: [
-      "High-capacity 120L/hour output",
-      "Multiple tap connections (up to 4)",
-      "Remote monitoring via app",
-      "Automatic self-cleaning cycle",
-      "UV sterilization system",
-      "HACCP certified",
-      "Real-time filter status alerts",
-      "Professional-grade construction",
+      "Débit haute capacité 120L/heure",
+      "Connexion multi-robinets (jusqu'à 4)",
+      "Surveillance à distance via application",
+      "Cycle d'auto-nettoyage automatique",
+      "Système de stérilisation UV",
+      "Certifié HACCP",
+      "Alertes état des filtres en temps réel",
+      "Construction qualité professionnelle",
     ],
     specs: {
-      capacity: "120L/hour",
+      capacity: "120L/heure",
       dimensions: "60 x 50 x 45 cm",
       power: "220V / 500W",
-      co2: "6kg cylinder",
+      co2: "Cylindre 6kg",
     },
-    price: "€149/month",
-    badge: "Best Value",
+    price: "149€/mois",
+    badge: "Meilleur Rapport Qualité-Prix",
   },
   {
     id: "high-capacity",
-    name: "AquaPure Tower",
-    tagline: "Premium Solution for Hotels & Event Venues",
-    description: "Our flagship freestanding tower combines elegant design with maximum capacity. Features hot, cold, and sparkling options with dedicated staff and guest modes.",
+    name: "Idra Tower",
+    tagline: "Solution Premium pour Hôtels & Lieux d'Événements",
+    description: "Notre tour sur pied phare combine design élégant et capacité maximale. Propose eau chaude, froide et gazeuse avec modes dédiés personnel et clients.",
     image: freestandingImage,
     features: [
-      "Hot, cold, and sparkling water",
-      "180 liters per hour capacity",
-      "Premium designer finish",
-      "Staff and guest operation modes",
-      "Integrated cup dispenser (optional)",
-      "Ambient LED lighting",
-      "Silent operation (<30dB)",
-      "White-glove installation service",
+      "Eau chaude, froide et gazeuse",
+      "Capacité de 180 litres par heure",
+      "Finition design premium",
+      "Modes de fonctionnement personnel et client",
+      "Distributeur de gobelets intégré (optionnel)",
+      "Éclairage LED ambiant",
+      "Fonctionnement silencieux (<30dB)",
+      "Service d'installation premium",
     ],
     specs: {
-      capacity: "180L/hour",
+      capacity: "180L/heure",
       dimensions: "35 x 35 x 150 cm",
       power: "220V / 800W",
-      co2: "10kg cylinder",
+      co2: "Cylindre 10kg",
     },
-    price: "€199/month",
+    price: "199€/mois",
     badge: "Premium",
   },
 ];
@@ -91,6 +91,13 @@ const specIcons: { [key: string]: React.ElementType } = {
   co2: Thermometer,
 };
 
+const specLabels: { [key: string]: string } = {
+  capacity: "Capacité",
+  dimensions: "Dimensions",
+  power: "Puissance",
+  co2: "CO2",
+};
+
 const Products = () => {
   return (
     <Layout>
@@ -99,15 +106,15 @@ const Products = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              Our Products
+              Nos Produits
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Premium Water Solutions for{" "}
-              <span className="text-gradient-ocean">Every Establishment</span>
+              Solutions d'Eau Premium pour{" "}
+              <span className="text-gradient-ocean">Chaque Établissement</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              From compact countertop units to high-capacity systems, find the perfect 
-              solution tailored to your restaurant, hotel, or café's specific needs.
+              Des unités compactes de comptoir aux systèmes haute capacité, trouvez la solution 
+              parfaitement adaptée aux besoins spécifiques de votre restaurant, hôtel ou café.
             </p>
           </div>
         </div>
@@ -168,7 +175,7 @@ const Products = () => {
                         <div key={key} className="text-center">
                           <Icon className="w-5 h-5 text-primary mx-auto mb-2" />
                           <div className="text-sm font-semibold text-foreground">{value}</div>
-                          <div className="text-xs text-muted-foreground capitalize">{key}</div>
+                          <div className="text-xs text-muted-foreground">{specLabels[key]}</div>
                         </div>
                       );
                     })}
@@ -177,12 +184,12 @@ const Products = () => {
                   {/* Price & CTA */}
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <div>
-                      <span className="text-sm text-muted-foreground">Starting from</span>
+                      <span className="text-sm text-muted-foreground">À partir de</span>
                       <div className="text-3xl font-display font-bold text-primary">{product.price}</div>
                     </div>
                     <Link to="/contact">
                       <Button variant="cta" size="lg">
-                        Request Quote
+                        Demander un Devis
                         <ArrowRight className="w-5 h-5" />
                       </Button>
                     </Link>
@@ -198,15 +205,15 @@ const Products = () => {
       <section className="section-padding bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-            Not sure which solution is right for you?
+            Vous ne savez pas quelle solution choisir ?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our experts will help you choose the perfect system based on your 
-            establishment's size, volume, and specific requirements.
+            Nos experts vous aideront à choisir le système parfait en fonction de la taille 
+            de votre établissement, du volume et de vos exigences spécifiques.
           </p>
           <Link to="/contact">
             <Button variant="ocean" size="xl">
-              Get Free Consultation
+              Consultation Gratuite
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>

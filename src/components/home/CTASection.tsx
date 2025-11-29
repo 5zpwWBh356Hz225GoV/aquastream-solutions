@@ -17,21 +17,21 @@ export function CTASection() {
             {/* Content */}
             <div className="text-primary-foreground">
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                Ready to Transform Your{" "}
-                <span className="text-water-medium">Water Service?</span>
+                Prêt à Transformer Votre{" "}
+                <span className="text-water-medium">Service d'Eau ?</span>
               </h2>
               <p className="text-lg text-primary-foreground/80 mb-8">
-                Join hundreds of hospitality professionals who have made the switch. 
-                Get a personalized quote tailored to your establishment's needs.
+                Rejoignez des centaines de professionnels de l'hôtellerie qui ont fait le choix du changement. 
+                Obtenez un devis personnalisé adapté aux besoins de votre établissement.
               </p>
 
               {/* Benefits list */}
               <ul className="space-y-4 mb-8">
                 {[
-                  "Free site assessment and consultation",
-                  "Customized solution for your specific needs",
-                  "Professional installation included",
-                  "24/7 technical support and maintenance",
+                  "Évaluation et consultation sur site gratuites",
+                  "Solution personnalisée selon vos besoins spécifiques",
+                  "Installation professionnelle incluse",
+                  "Support technique et maintenance 24h/24 7j/7",
                 ].map((benefit) => (
                   <li key={benefit} className="flex items-center gap-3 text-primary-foreground/90">
                     <CheckCircle2 className="w-5 h-5 text-water-medium flex-shrink-0" />
@@ -43,7 +43,7 @@ export function CTASection() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
                   <Button variant="cta" size="xl" className="w-full sm:w-auto">
-                    Request Your Free Quote
+                    Demander Votre Devis Gratuit
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
@@ -53,7 +53,7 @@ export function CTASection() {
             {/* Contact info */}
             <div className="bg-primary-foreground/10 backdrop-blur-xl rounded-2xl p-8 border border-primary-foreground/20">
               <h3 className="font-display text-xl font-semibold text-primary-foreground mb-6">
-                Prefer to talk directly?
+                Préférez-vous nous parler directement ?
               </h3>
               
               <div className="space-y-6">
@@ -65,27 +65,27 @@ export function CTASection() {
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="text-sm text-primary-foreground/70">Call us</div>
+                    <div className="text-sm text-primary-foreground/70">Appelez-nous</div>
                     <div className="text-lg font-semibold text-primary-foreground">+33 1 23 45 67 89</div>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:contact@aquapure.com"
+                  href="mailto:contact@idra.fr"
                   className="flex items-center gap-4 p-4 rounded-xl bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <div className="text-sm text-primary-foreground/70">Email us</div>
-                    <div className="text-lg font-semibold text-primary-foreground">contact@aquapure.com</div>
+                    <div className="text-sm text-primary-foreground/70">Écrivez-nous</div>
+                    <div className="text-lg font-semibold text-primary-foreground">contact@idra.fr</div>
                   </div>
                 </a>
               </div>
 
               <p className="text-sm text-primary-foreground/60 mt-6">
-                Our team typically responds within 2 hours during business hours.
+                Notre équipe répond généralement sous 2 heures pendant les heures ouvrables.
               </p>
             </div>
           </div>

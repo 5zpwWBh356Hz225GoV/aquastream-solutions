@@ -23,22 +23,22 @@ const NotFound = () => {
             404
           </h1>
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-foreground mb-4">
-            Page Not Found
+            Page Non Trouvée
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-            The page you're looking for seems to have evaporated. Let's get you back on track.
+            La page que vous recherchez semble s'être évaporée. Revenons sur la bonne voie.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/">
               <Button variant="ocean" size="lg">
                 <Home className="w-5 h-5" />
-                Back to Home
+                Retour à l'Accueil
               </Button>
             </Link>
             <Button variant="outline" size="lg" onClick={() => window.history.back()}>
               <ArrowLeft className="w-5 h-5" />
-              Go Back
+              Revenir en Arrière
             </Button>
           </div>
         </div>

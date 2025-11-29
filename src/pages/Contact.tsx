@@ -42,8 +42,8 @@ const Contact = () => {
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     toast({
-      title: "Request Submitted!",
-      description: "Our team will contact you within 24 hours with a personalized quote.",
+      title: "Demande Envoyée !",
+      description: "Notre équipe vous contactera sous 24 heures avec un devis personnalisé.",
     });
     
     setIsSubmitting(false);
@@ -65,15 +65,15 @@ const Contact = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-              Get in Touch
+              Contactez-Nous
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Request Your{" "}
-              <span className="text-gradient-ocean">Free Quote</span>
+              Demandez Votre{" "}
+              <span className="text-gradient-ocean">Devis Gratuit</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Tell us about your establishment and we'll prepare a customized proposal 
-              showing exactly how much you can save with AquaPure.
+              Parlez-nous de votre établissement et nous préparerons une proposition personnalisée 
+              montrant exactement combien vous pouvez économiser avec Idra.
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Contact = () => {
             <div className="lg:col-span-3">
               <div className="bg-card rounded-3xl p-8 lg:p-10 border border-border shadow-soft">
                 <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-                  Tell Us About Your Needs
+                  Parlez-Nous de Vos Besoins
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -95,7 +95,7 @@ const Contact = () => {
                     {/* Name */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Full Name *
+                        Nom Complet *
                       </label>
                       <div className="relative">
                         <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -114,7 +114,7 @@ const Contact = () => {
                     {/* Email */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Email Address *
+                        Adresse Email *
                       </label>
                       <div className="relative">
                         <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -133,7 +133,7 @@ const Contact = () => {
                     {/* Phone */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Phone Number
+                        Numéro de Téléphone
                       </label>
                       <div className="relative">
                         <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -151,7 +151,7 @@ const Contact = () => {
                     {/* Company */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Establishment Name *
+                        Nom de l'Établissement *
                       </label>
                       <div className="relative">
                         <Building className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -170,7 +170,7 @@ const Contact = () => {
                     {/* Establishment Type */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Type of Establishment *
+                        Type d'Établissement *
                       </label>
                       <select
                         name="establishmentType"
@@ -179,21 +179,21 @@ const Contact = () => {
                         required
                         className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
                       >
-                        <option value="">Select type...</option>
+                        <option value="">Sélectionnez le type...</option>
                         <option value="restaurant">Restaurant</option>
-                        <option value="hotel">Hotel</option>
+                        <option value="hotel">Hôtel</option>
                         <option value="cafe">Café</option>
                         <option value="bar">Bar</option>
-                        <option value="catering">Catering</option>
-                        <option value="events">Event Venue</option>
-                        <option value="other">Other</option>
+                        <option value="catering">Traiteur</option>
+                        <option value="events">Lieu d'Événements</option>
+                        <option value="other">Autre</option>
                       </select>
                     </div>
 
                     {/* Covers per day */}
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Average Covers/Day
+                        Couverts Moyens/Jour
                       </label>
                       <select
                         name="coversPerDay"
@@ -201,7 +201,7 @@ const Contact = () => {
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
                       >
-                        <option value="">Select range...</option>
+                        <option value="">Sélectionnez une fourchette...</option>
                         <option value="0-50">0-50</option>
                         <option value="50-100">50-100</option>
                         <option value="100-200">100-200</option>
@@ -214,7 +214,7 @@ const Contact = () => {
                   {/* Message */}
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Additional Information
+                      Informations Complémentaires
                     </label>
                     <div className="relative">
                       <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-muted-foreground" />
@@ -224,7 +224,7 @@ const Contact = () => {
                         onChange={handleChange}
                         rows={4}
                         className="w-full pl-12 pr-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none"
-                        placeholder="Tell us about your current water setup, specific requirements, or any questions..."
+                        placeholder="Parlez-nous de votre installation actuelle, vos exigences spécifiques, ou vos questions..."
                       />
                     </div>
                   </div>
@@ -238,17 +238,17 @@ const Contact = () => {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      "Submitting..."
+                      "Envoi en cours..."
                     ) : (
                       <>
-                        Request Free Quote
+                        Demander un Devis Gratuit
                         <Send className="w-5 h-5" />
                       </>
                     )}
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
-                    By submitting, you agree to our privacy policy. We'll never share your information.
+                    En soumettant, vous acceptez notre politique de confidentialité. Nous ne partagerons jamais vos informations.
                   </p>
                 </form>
               </div>
@@ -259,7 +259,7 @@ const Contact = () => {
               {/* Contact cards */}
               <div className="bg-card rounded-2xl p-6 border border-border">
                 <h3 className="font-display font-semibold text-lg text-foreground mb-4">
-                  Contact Information
+                  Informations de Contact
                 </h3>
                 <div className="space-y-4">
                   <a
@@ -270,21 +270,21 @@ const Contact = () => {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Call Us</div>
+                      <div className="text-sm text-muted-foreground">Appelez-Nous</div>
                       <div className="font-semibold text-foreground">+33 1 23 45 67 89</div>
                     </div>
                   </a>
 
                   <a
-                    href="mailto:contact@aquapure.com"
+                    href="mailto:contact@idra.fr"
                     className="flex items-center gap-4 p-4 rounded-xl bg-muted hover:bg-muted/80 transition-colors"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Email Us</div>
-                      <div className="font-semibold text-foreground">contact@aquapure.com</div>
+                      <div className="text-sm text-muted-foreground">Écrivez-Nous</div>
+                      <div className="font-semibold text-foreground">contact@idra.fr</div>
                     </div>
                   </a>
 
@@ -293,7 +293,7 @@ const Contact = () => {
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Visit Us</div>
+                      <div className="text-sm text-muted-foreground">Rendez-Nous Visite</div>
                       <div className="font-semibold text-foreground">Paris, France</div>
                     </div>
                   </div>
@@ -303,8 +303,8 @@ const Contact = () => {
                       <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Business Hours</div>
-                      <div className="font-semibold text-foreground">Mon-Fri: 8am - 6pm</div>
+                      <div className="text-sm text-muted-foreground">Heures d'Ouverture</div>
+                      <div className="font-semibold text-foreground">Lun-Ven : 8h - 18h</div>
                     </div>
                   </div>
                 </div>
@@ -313,15 +313,15 @@ const Contact = () => {
               {/* What to expect */}
               <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-6 border border-border">
                 <h3 className="font-display font-semibold text-lg text-foreground mb-4">
-                  What to Expect
+                  À Quoi S'attendre
                 </h3>
                 <ul className="space-y-4">
                   {[
-                    "Response within 24 hours",
-                    "Personalized savings analysis",
-                    "Free on-site consultation",
-                    "No-obligation quote",
-                    "Flexible payment options",
+                    "Réponse sous 24 heures",
+                    "Analyse d'économies personnalisée",
+                    "Consultation sur site gratuite",
+                    "Devis sans engagement",
+                    "Options de paiement flexibles",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-muted-foreground">
                       <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" />
@@ -334,12 +334,12 @@ const Contact = () => {
               {/* Quick stats */}
               <div className="bg-card rounded-2xl p-6 border border-border">
                 <h3 className="font-display font-semibold text-lg text-foreground mb-4">
-                  Why Contact Us?
+                  Pourquoi Nous Contacter ?
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-muted rounded-xl">
                     <div className="text-2xl font-display font-bold text-primary">500+</div>
-                    <div className="text-sm text-muted-foreground">Happy Clients</div>
+                    <div className="text-sm text-muted-foreground">Clients Satisfaits</div>
                   </div>
                   <div className="text-center p-4 bg-muted rounded-xl">
                     <div className="text-2xl font-display font-bold text-primary">98%</div>
