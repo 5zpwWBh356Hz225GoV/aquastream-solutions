@@ -55,12 +55,24 @@ export function HeroSection() {
 
             {/* Trust badges */}
             <div className="mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <p className="text-primary-foreground/60 text-sm mb-4">Ils nous font confiance</p>
-              <div className="flex flex-wrap gap-8 items-center">
-                <div className="text-primary-foreground/40 font-display font-bold text-xl">Hilton</div>
-                <div className="text-primary-foreground/40 font-display font-bold text-xl">Marriott</div>
-                <div className="text-primary-foreground/40 font-display font-bold text-xl">Accor</div>
-                <div className="text-primary-foreground/40 font-display font-bold text-xl">Nobu</div>
+              <p className="text-primary-foreground/60 text-sm mb-6 uppercase tracking-wider font-medium">Ils nous font confiance</p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+                {[
+                  { name: "Hilton", type: "Hôtels" },
+                  { name: "Marriott", type: "Hôtels" },
+                  { name: "Accor", type: "Hôtels" },
+                  { name: "Nobu", type: "Restaurants" },
+                ].map((brand) => (
+                  <div
+                    key={brand.name}
+                    className="group bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-xl px-4 py-3 sm:px-5 sm:py-4 text-center hover:bg-primary-foreground/10 hover:border-primary-foreground/20 transition-all duration-300"
+                  >
+                    <div className="text-primary-foreground font-display font-bold text-lg sm:text-xl group-hover:scale-105 transition-transform duration-300">
+                      {brand.name}
+                    </div>
+                    <div className="text-primary-foreground/50 text-xs mt-1">{brand.type}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
