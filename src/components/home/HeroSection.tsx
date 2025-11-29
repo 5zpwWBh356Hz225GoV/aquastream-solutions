@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-dispenser.jpg";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -52,12 +51,6 @@ export function HeroSection() {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
-              <Link to="/advantages">
-                <Button variant="hero" size="xl" className="w-full sm:w-auto">
-                  <Play className="w-5 h-5" />
-                  Découvrir Nos Avantages
-                </Button>
-              </Link>
             </div>
 
             {/* Trust badges */}
@@ -72,32 +65,6 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative animate-slide-in-right hidden lg:block">
-            <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-water-glow/30 blur-3xl rounded-full scale-75" />
-              
-              {/* Product image */}
-              <img
-                src={heroImage}
-                alt="Fontaine à eau premium Idra pour restaurants"
-                className="relative z-10 w-full max-w-lg mx-auto drop-shadow-2xl animate-float"
-              />
-              
-              {/* Stats card */}
-              <div className="absolute -bottom-4 -left-4 bg-card/90 backdrop-blur-xl rounded-2xl p-6 shadow-elevated animate-fade-in" style={{ animationDelay: "0.5s" }}>
-                <div className="text-4xl font-display font-bold text-primary mb-1">1¢</div>
-                <div className="text-muted-foreground text-sm">par litre</div>
-              </div>
-
-              {/* Eco badge */}
-              <div className="absolute -top-4 -right-4 bg-success/90 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-elevated animate-fade-in" style={{ animationDelay: "0.6s" }}>
-                <div className="text-success-foreground font-semibold">Éco-Responsable</div>
-                <div className="text-success-foreground/80 text-sm">Zéro bouteille plastique</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
