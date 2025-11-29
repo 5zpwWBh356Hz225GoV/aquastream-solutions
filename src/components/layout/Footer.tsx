@@ -1,0 +1,145 @@
+import { Link } from "react-router-dom";
+import { Droplets, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+
+const footerLinks = {
+  products: [
+    { name: "Sparkling Water Dispensers", href: "/products/sparkling" },
+    { name: "Filtered Water Systems", href: "/products/filtered" },
+    { name: "High-Capacity Solutions", href: "/products/high-capacity" },
+    { name: "All Products", href: "/products" },
+  ],
+  company: [
+    { name: "About Us", href: "/about" },
+    { name: "Our Technology", href: "/technology" },
+    { name: "Testimonials", href: "/testimonials" },
+    { name: "Blog", href: "/blog" },
+  ],
+  support: [
+    { name: "Contact", href: "/contact" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Technical Support", href: "/support" },
+    { name: "Maintenance", href: "/maintenance" },
+  ],
+};
+
+const socialLinks = [
+  { name: "Facebook", icon: Facebook, href: "#" },
+  { name: "Twitter", icon: Twitter, href: "#" },
+  { name: "LinkedIn", icon: Linkedin, href: "#" },
+  { name: "Instagram", icon: Instagram, href: "#" },
+];
+
+export function Footer() {
+  return (
+    <footer className="bg-ocean-deep text-primary-foreground">
+      {/* Main Footer */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          {/* Brand Column */}
+          <div className="lg:col-span-2">
+            <Link to="/" className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center">
+                <Droplets className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <span className="font-display font-bold text-xl">
+                Aqua<span className="text-water-medium">Pure</span>
+              </span>
+            </Link>
+            <p className="text-primary-foreground/70 mb-6 max-w-sm">
+              Premium filtered and sparkling water solutions for restaurants, hotels, and cafés. 
+              Save money, reduce environmental impact, and delight your customers.
+            </p>
+            <div className="space-y-3">
+              <a href="tel:+33123456789" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Phone className="w-5 h-5" />
+                <span>+33 1 23 45 67 89</span>
+              </a>
+              <a href="mailto:contact@aquapure.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Mail className="w-5 h-5" />
+                <span>contact@aquapure.com</span>
+              </a>
+              <div className="flex items-center gap-3 text-primary-foreground/70">
+                <MapPin className="w-5 h-5" />
+                <span>Paris, France</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Products */}
+          <div>
+            <h3 className="font-display font-semibold text-lg mb-4">Products</h3>
+            <ul className="space-y-3">
+              {footerLinks.products.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="font-display font-semibold text-lg mb-4">Company</h3>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="font-display font-semibold text-lg mb-4">Support</h3>
+            <ul className="space-y-3">
+              {footerLinks.support.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-primary-foreground/60 text-sm">
+              © {new Date().getFullYear()} AquaPure. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+                  aria-label={social.name}
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
