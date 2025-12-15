@@ -139,7 +139,16 @@ export function Footer() {
               © {new Date().getFullYear()} Idra. Tous droits réservés.
             </p>
             <div className="flex items-center gap-4">
-              {socialLinks.map(social => {})}
+              {socialLinks.map(social => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+                  aria-label={social.name}
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
