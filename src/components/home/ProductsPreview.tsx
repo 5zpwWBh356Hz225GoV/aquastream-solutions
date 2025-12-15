@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import sparklingImage from "@/assets/product-sparkling.jpg";
 import undercounterImage from "@/assets/product-undercounter.jpg";
-import freestandingImage from "@/assets/product-freestanding.jpg";
 
 const products = [
   {
@@ -13,7 +12,7 @@ const products = [
     description: "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate, gazeuse et fraîche.",
     image: sparklingImage,
     features: ["Plate & Gazeuse", "Capacité 40L/heure", "Design compact", "Commandes tactiles"],
-    price: "À partir de 89€/mois",
+    price: "À partir de 89 CHF/mois",
     badge: "Le Plus Populaire",
     href: "/products/sparkling",
   },
@@ -24,20 +23,9 @@ const products = [
     description: "Système sous-comptoir haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
     image: undercounterImage,
     features: ["Capacité 120L/heure", "Plusieurs robinets", "Monitoring à distance", "Auto-nettoyant"],
-    price: "À partir de 149€/mois",
+    price: "À partir de 149 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
     href: "/products/filtered",
-  },
-  {
-    id: "freestanding",
-    name: "Idra Tower",
-    tagline: "Élégance Sur Pied",
-    description: "Design tour sur pied pour établissements haut de gamme. Une déclaration visuelle tout en délivrant une eau premium.",
-    image: freestandingImage,
-    features: ["Chaude, froide & gazeuse", "Finition design", "Capacité 180L/heure", "Modes personnel & client"],
-    price: "À partir de 199€/mois",
-    badge: "Premium",
-    href: "/products/high-capacity",
   },
 ];
 

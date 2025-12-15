@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Check, Droplets, Zap, Thermometer, Gauge } from "lucide-react";
 import sparklingImage from "@/assets/product-sparkling.jpg";
 import undercounterImage from "@/assets/product-undercounter.jpg";
-import freestandingImage from "@/assets/product-freestanding.jpg";
 
 const products = [
   {
@@ -29,7 +28,7 @@ const products = [
       power: "220V / 300W",
       co2: "Cylindre 2kg (inclus)",
     },
-    price: "89€/mois",
+    price: "89 CHF/mois",
     badge: "Le Plus Populaire",
   },
   {
@@ -54,33 +53,8 @@ const products = [
       power: "220V / 500W",
       co2: "Cylindre 6kg",
     },
-    price: "149€/mois",
+    price: "149 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
-  },
-  {
-    id: "high-capacity",
-    name: "Idra Tower",
-    tagline: "Solution Premium pour Hôtels & Lieux d'Événements",
-    description: "Notre tour sur pied phare combine design élégant et capacité maximale. Propose eau chaude, froide et gazeuse avec modes dédiés personnel et clients.",
-    image: freestandingImage,
-    features: [
-      "Eau chaude, froide et gazeuse",
-      "Capacité de 180 litres par heure",
-      "Finition design premium",
-      "Modes de fonctionnement personnel et client",
-      "Distributeur de gobelets intégré (optionnel)",
-      "Éclairage LED ambiant",
-      "Fonctionnement silencieux (<30dB)",
-      "Service d'installation premium",
-    ],
-    specs: {
-      capacity: "180L/heure",
-      dimensions: "35 x 35 x 150 cm",
-      power: "220V / 800W",
-      co2: "Cylindre 10kg",
-    },
-    price: "199€/mois",
-    badge: "Premium",
   },
 ];
 
