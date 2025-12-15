@@ -15,7 +15,7 @@ const products = [
     features: [
       "Eau plate, gazeuse et fraîche",
       "Capacité de 40 litres par heure",
-      "Design compact de comptoir (40x35x50cm)",
+      "Design compact de comptoir",
       "Commandes tactiles",
       "Système de filtration 5 étapes",
       "Injection automatique de CO2",
