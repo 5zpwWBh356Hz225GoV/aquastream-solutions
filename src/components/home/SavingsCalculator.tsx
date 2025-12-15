@@ -88,7 +88,7 @@ export function SavingsCalculator() {
               <div>
                 <label className="flex items-center justify-between mb-2">
                   <span className="text-sm font-medium text-foreground">Coût actuel par litre (bouteille)</span>
-                  <span className="text-sm font-bold text-primary">{waterPrice.toFixed(2)}€</span>
+                  <span className="text-sm font-bold text-primary">{waterPrice.toFixed(2)} CHF</span>
                 </label>
                 <input
                   type="range"
@@ -100,8 +100,8 @@ export function SavingsCalculator() {
                   className="w-full h-2 bg-muted rounded-full appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary [&::-webkit-slider-thumb]:cursor-pointer"
                 />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
-                  <span>0,30€</span>
-                  <span>2,00€</span>
+                  <span>0,30 CHF</span>
+                  <span>2,00 CHF</span>
                 </div>
               </div>
             </div>
@@ -113,13 +113,13 @@ export function SavingsCalculator() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-success/10 rounded-xl p-4 text-center">
                 <div className="text-3xl font-display font-bold text-success">
-                  {Math.round(yearlySavings).toLocaleString()}€
+                  {Math.round(yearlySavings).toLocaleString()} CHF
                 </div>
                 <div className="text-sm text-muted-foreground">Économies Annuelles</div>
               </div>
               <div className="bg-primary/10 rounded-xl p-4 text-center">
                 <div className="text-3xl font-display font-bold text-primary">
-                  {Math.round(monthlySavings).toLocaleString()}€
+                  {Math.round(monthlySavings).toLocaleString()} CHF
                 </div>
                 <div className="text-sm text-muted-foreground">Économies Mensuelles</div>
               </div>
@@ -133,7 +133,7 @@ export function SavingsCalculator() {
             </span>
             
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Économisez <span className="text-water-medium">{Math.round(yearlySavings).toLocaleString()}€</span> Par An
+              Économisez <span className="text-water-medium">{Math.round(yearlySavings).toLocaleString()} CHF</span> Par An
             </h2>
             
             <p className="text-lg text-primary-foreground/80 mb-8">
