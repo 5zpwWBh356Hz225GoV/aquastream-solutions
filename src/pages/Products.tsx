@@ -10,7 +10,7 @@ const products = [
     id: "sparkling",
     name: "Idra Sparkle",
     tagline: "Parfait pour Cafés & Petits Restaurants",
-    description: "Notre solution compacte de comptoir délivre une eau plate et gazeuse premium sans prendre de place précieuse. Idéale pour les établissements servant jusqu'à 150 couverts par jour.",
+    description: "Notre solution compacte de comptoir délivre une eau plate et gazeuse premium sans prendre de place précieuse. Idéale pour les établissements servant jusqu'à 300 couverts par jour.",
     image: sparklingImage,
     features: [
       "Eau plate, gazeuse et fraîche",
