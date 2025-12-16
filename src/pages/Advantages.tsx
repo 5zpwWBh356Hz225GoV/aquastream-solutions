@@ -1,18 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
-  TrendingDown, 
-  Leaf, 
-  Truck, 
-  Award,
-  Check,
-  BarChart3,
-  Package,
-  Clock,
-  Shield
-} from "lucide-react";
+import { ArrowRight, TrendingDown, Leaf, Truck, Award, Check, BarChart3, Package, Clock, Shield } from "lucide-react";
 
 const advantages = [
   {
@@ -22,7 +11,8 @@ const advantages = [
     subtitle: "Réduisez vos coûts d'eau jusqu'à 97%",
     color: "text-primary",
     bgColor: "bg-primary/10",
-    description: "Transformez vos dépenses d'eau d'un poste de coût majeur à une ligne négligeable. À seulement 1 centime par litre, Idra offre une valeur exceptionnelle.",
+    description:
+      "Transformez vos dépenses d'eau d'un poste de coût majeur à une ligne négligeable. À seulement 1 centime par litre, Idra offre une valeur exceptionnelle.",
     stats: [
       { value: "1¢", label: "Coût par litre" },
       { value: "97%", label: "Économies moyennes" },
@@ -47,7 +37,8 @@ const advantages = [
     subtitle: "Zéro plastique, impact maximum",
     color: "text-success",
     bgColor: "bg-success/10",
-    description: "Ayez un impact environnemental tangible tout en renforçant vos engagements écologiques. Chaque litre servi contribue à protéger notre planète.",
+    description:
+      "Ayez un impact environnemental tangible tout en renforçant vos engagements écologiques. Chaque litre servi contribue à protéger notre planète.",
     stats: [
       { value: "50K+", label: "Bouteilles économisées/an" },
       { value: "4,1T", label: "CO2 évité" },
@@ -72,7 +63,8 @@ const advantages = [
     subtitle: "Libérez espace et temps",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
-    description: "Dites adieu aux calendriers de livraison, aux palettes lourdes et aux casse-têtes de stockage. Idra se connecte directement à votre alimentation en eau pour une eau illimitée à la demande.",
+    description:
+      "Dites adieu aux calendriers de livraison, aux palettes lourdes et aux casse-têtes de stockage. Idra se connecte directement à votre alimentation en eau pour une eau illimitée à la demande.",
     stats: [
       { value: "0", label: "Livraisons nécessaires" },
       { value: "100%", label: "Stockage libéré" },
@@ -97,7 +89,8 @@ const advantages = [
     subtitle: "Goûtez la différence",
     color: "text-accent",
     bgColor: "bg-accent/10",
-    description: "Notre filtration avancée en 5 étapes garantit que chaque verre servi est cristallin, parfaitement pur, et sublime le goût de vos boissons et de votre cuisine.",
+    description:
+      "Notre filtration avancée en 5 étapes garantit que chaque verre servi est cristallin, parfaitement pur, et sublime le goût de vos boissons et de votre cuisine.",
     stats: [
       { value: "5 Étapes", label: "Filtration" },
       { value: "99,9%", label: "Pureté" },
@@ -128,12 +121,11 @@ const Advantages = () => {
               Pourquoi Idra
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Les Avantages Qui Font{" "}
-              <span className="text-gradient-ocean">La Différence</span>
+              Les Avantages Qui Font <span className="text-gradient-ocean">La Différence</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Découvrez pourquoi des centaines de professionnels de l'hôtellerie ont choisi Idra 
-              et ne reviendraient jamais en arrière.
+              Découvrez pourquoi des centaines de professionnels de l'hôtellerie-restauration ont choisi Idra et ne
+              reviendraient jamais en arrière.
             </p>
           </div>
         </div>
@@ -144,29 +136,23 @@ const Advantages = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-24">
             {advantages.map((advantage, index) => (
-              <div
-                key={advantage.id}
-                id={advantage.id}
-                className="scroll-mt-24"
-              >
-                <div className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-dense" : ""
-                }`}>
+              <div key={advantage.id} id={advantage.id} className="scroll-mt-24">
+                <div
+                  className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
+                    index % 2 === 1 ? "lg:grid-flow-dense" : ""
+                  }`}
+                >
                   {/* Content */}
                   <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                     <div className={`w-16 h-16 rounded-2xl ${advantage.bgColor} flex items-center justify-center mb-6`}>
                       <advantage.icon className={`w-8 h-8 ${advantage.color}`} />
                     </div>
-                    
-                    <span className={`text-sm font-semibold ${advantage.color}`}>
-                      {advantage.subtitle}
-                    </span>
+
+                    <span className={`text-sm font-semibold ${advantage.color}`}>{advantage.subtitle}</span>
                     <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-2 mb-4">
                       {advantage.title}
                     </h2>
-                    <p className="text-lg text-muted-foreground mb-8">
-                      {advantage.description}
-                    </p>
+                    <p className="text-lg text-muted-foreground mb-8">{advantage.description}</p>
 
                     {/* Benefits */}
                     <ul className="space-y-3 mb-8">
@@ -207,11 +193,15 @@ const Advantages = () => {
                         <div className="space-y-4">
                           <div className="flex items-center justify-between p-4 bg-muted rounded-xl">
                             <span className="text-muted-foreground">{advantage.comparison.traditional.label}</span>
-                            <span className="font-semibold text-foreground">{advantage.comparison.traditional.price}</span>
+                            <span className="font-semibold text-foreground">
+                              {advantage.comparison.traditional.price}
+                            </span>
                           </div>
                           <div className={`flex items-center justify-between p-4 rounded-xl ${advantage.bgColor}`}>
                             <span className={advantage.color}>{advantage.comparison.idra.label}</span>
-                            <span className={`font-bold text-lg ${advantage.color}`}>{advantage.comparison.idra.price}</span>
+                            <span className={`font-bold text-lg ${advantage.color}`}>
+                              {advantage.comparison.idra.price}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -228,9 +218,7 @@ const Advantages = () => {
       <section className="section-padding bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              L'Offre Complète
-            </h2>
+            <h2 className="font-display text-3xl font-bold text-foreground mb-4">L'Offre Complète</h2>
             <p className="text-muted-foreground">
               Chaque solution Idra inclut tout ce dont vous avez besoin pour réussir.
             </p>
@@ -238,7 +226,11 @@ const Advantages = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Package, title: "Installation Gratuite", desc: "Mise en place professionnelle sans frais supplémentaires" },
+              {
+                icon: Package,
+                title: "Installation Gratuite",
+                desc: "Mise en place professionnelle sans frais supplémentaires",
+              },
               { icon: Clock, title: "Support 24/7", desc: "Assistance technique disponible à tout moment" },
               { icon: Shield, title: "Garantie Complète", desc: "Couverture intégrale incluse" },
               { icon: BarChart3, title: "Suivi Consommation", desc: "Suivez votre utilisation en temps réel" },
