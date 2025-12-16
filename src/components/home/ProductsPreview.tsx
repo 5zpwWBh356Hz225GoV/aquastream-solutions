@@ -50,7 +50,7 @@ export function ProductsPreview() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {products.map((product, index) => (
             <div
               key={product.id}
