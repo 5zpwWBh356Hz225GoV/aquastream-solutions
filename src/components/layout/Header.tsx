@@ -26,6 +26,7 @@ const navigation = [
   },
   { name: "Technologie", href: "/technology" },
   { name: "Témoignages", href: "/testimonials" },
+  { name: "Maintenance", href: "/maintenance" },
   { name: "Blog", href: "/blog" },
 ];
 
