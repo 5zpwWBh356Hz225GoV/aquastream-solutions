@@ -156,7 +156,7 @@ export function SavingsCalculator() {
                   <Leaf className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-2xl font-display font-bold">{bottlesSaved.toLocaleString()}</div>
+                  <div className="text-2xl font-display font-bold">900,000</div>
                   <div className="text-primary-foreground/70">Bouteilles Économisées/An</div>
                 </div>
               </div>
