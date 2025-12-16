@@ -4,8 +4,9 @@ const benefits = [
   {
     icon: TrendingDown,
     title: "Économies Significatives",
-    description: "Seulement 1 centime par litre contre 0,50€+ pour l'eau en bouteille. Économisez jusqu'à 15 000€ par an pour un restaurant moyen.",
-    stat: "97%",
+    description:
+      "Seulement 2 centimes par litre contre 1CHF+ pour l'eau en bouteille. Économisez jusqu'à 15 000 CHF par an pour un restaurant moyen.",
+    stat: "98%",
     statLabel: "Réduction des Coûts",
     color: "text-primary",
     bgColor: "bg-primary/10",
@@ -13,8 +14,9 @@ const benefits = [
   {
     icon: Leaf,
     title: "Impact Environnemental",
-    description: "Éliminez complètement les bouteilles plastiques. Une seule unité permet d'économiser plus de 50 000 bouteilles par an.",
-    stat: "50K+",
+    description:
+      "Éliminez complètement les bouteilles plastiques. Une seule unité permet d'économiser plus de 50 000 bouteilles par an.",
+    stat: "500K+",
     statLabel: "Bouteilles Économisées/An",
     color: "text-success",
     bgColor: "bg-success/10",
@@ -22,7 +24,8 @@ const benefits = [
   {
     icon: Truck,
     title: "Zéro Contrainte Logistique",
-    description: "Plus de livraisons, de palettes ou d'espace de stockage nécessaire. Libérez de l'espace précieux et simplifiez vos opérations.",
+    description:
+      "Plus de livraisons, de palettes ou d'espace de stockage nécessaire. Libérez de l'espace précieux et simplifiez vos opérations.",
     stat: "100%",
     statLabel: "Logistique Éliminée",
     color: "text-secondary",
@@ -31,8 +34,9 @@ const benefits = [
   {
     icon: Award,
     title: "Qualité Premium",
-    description: "La filtration multi-étapes garantit une eau cristalline qui sublime le goût de vos boissons et de vos plats.",
-    stat: "5 Étapes",
+    description:
+      "La filtration multi-étapes garantit une eau cristalline qui sublime le goût de vos boissons et de vos plats.",
+    stat: "4 Étapes",
     statLabel: "Système de Filtration",
     color: "text-accent",
     bgColor: "bg-accent/10",
@@ -40,8 +44,9 @@ const benefits = [
   {
     icon: Droplets,
     title: "Plate & Gazeuse",
-    description: "Proposez de l'eau plate et parfaitement gazéifiée au robinet, personnalisée selon les préférences de vos clients.",
-    stat: "3",
+    description:
+      "Proposez de l'eau plate et parfaitement gazéifiée au robinet, personnalisée selon les préférences de vos clients.",
+    stat: "2",
     statLabel: "Types d'Eau",
     color: "text-primary",
     bgColor: "bg-primary/10",
@@ -49,8 +54,9 @@ const benefits = [
   {
     icon: Shield,
     title: "Certifié Hygiène",
-    description: "Tous nos systèmes répondent aux normes d'hygiène alimentaire les plus strictes avec cycles de nettoyage automatiques et stérilisation UV.",
-    stat: "HACCP",
+    description:
+      "Tous nos systèmes répondent aux normes d'hygiène alimentaire les plus strictes grâce à notre filtration et stérilisation UV.",
+    stat: "NSF",
     statLabel: "Certifié",
     color: "text-success",
     bgColor: "bg-success/10",
@@ -67,12 +73,11 @@ export function BenefitsSection() {
             Pourquoi Choisir Idra
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Le Choix Intelligent pour{" "}
-            <span className="text-gradient-ocean">l'Hôtellerie Moderne</span>
+            Le Choix Intelligent pour <span className="text-gradient-ocean">l'Hôtellerie Moderne</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Rejoignez des centaines de restaurants, hôtels et cafés qui ont transformé leur service d'eau 
-            avec des économies significatives et des bénéfices environnementaux.
+            Rejoignez des centaines de restaurants, hôtels et cafés qui ont transformé leur service d'eau avec des
+            économies significatives et des bénéfices environnementaux.
           </p>
         </div>
 
@@ -85,26 +90,20 @@ export function BenefitsSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Icon */}
-              <div className={`w-14 h-14 rounded-xl ${benefit.bgColor} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+              <div
+                className={`w-14 h-14 rounded-xl ${benefit.bgColor} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+              >
                 <benefit.icon className={`w-7 h-7 ${benefit.color}`} />
               </div>
 
               {/* Content */}
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                {benefit.title}
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                {benefit.description}
-              </p>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-3">{benefit.title}</h3>
+              <p className="text-muted-foreground mb-6">{benefit.description}</p>
 
               {/* Stat */}
               <div className="pt-6 border-t border-border">
-                <div className={`text-3xl font-display font-bold ${benefit.color}`}>
-                  {benefit.stat}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {benefit.statLabel}
-                </div>
+                <div className={`text-3xl font-display font-bold ${benefit.color}`}>{benefit.stat}</div>
+                <div className="text-sm text-muted-foreground">{benefit.statLabel}</div>
               </div>
             </div>
           ))}
