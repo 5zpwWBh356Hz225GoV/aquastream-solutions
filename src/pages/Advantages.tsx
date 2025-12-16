@@ -8,26 +8,26 @@ const advantages = [
     id: "savings",
     icon: TrendingDown,
     title: "Économies Significatives",
-    subtitle: "Réduisez vos coûts d'eau jusqu'à 97%",
+    subtitle: "Réduisez vos coûts d'eau jusqu'à 98%",
     color: "text-primary",
     bgColor: "bg-primary/10",
     description:
       "Transformez vos dépenses d'eau d'un poste de coût majeur à une ligne négligeable. À seulement 1 centime par litre, Idra offre une valeur exceptionnelle.",
     stats: [
-      { value: "1¢", label: "Coût par litre" },
-      { value: "97%", label: "Économies moyennes" },
-      { value: "15K€+", label: "Potentiel économies/an" },
+      { value: "2 centimes", label: "Coût par litre" },
+      { value: "98%", label: "Économies moyennes" },
+      { value: "15'000 CHF", label: "Potentiel économies/an" },
     ],
     benefits: [
       "Payez uniquement la consommation d'eau, pas les bouteilles et la logistique",
       "Coûts mensuels prévisibles avec maintenance tout inclus",
       "Aucun frais caché ou charges imprévues",
-      "Installation gratuite et options de mise à niveau",
-      "ROI généralement atteint en 3-6 mois",
+      "Installation rapide et options de mise à niveau",
+      "ROI atteint en 1 semaine seulement",
     ],
     comparison: {
-      traditional: { price: "0,50€-2,00€", label: "Eau en Bouteille" },
-      idra: { price: "0,01€", label: "Idra" },
+      traditional: { price: "1,00 CHF", label: "Eau en Bouteille" },
+      idra: { price: "0,02 CHF", label: "Idra" },
     },
   },
   {
@@ -40,19 +40,18 @@ const advantages = [
     description:
       "Ayez un impact environnemental tangible tout en renforçant vos engagements écologiques. Chaque litre servi contribue à protéger notre planète.",
     stats: [
-      { value: "50K+", label: "Bouteilles économisées/an" },
+      { value: "3000+", label: "Bouteilles économisées/an" },
       { value: "4,1T", label: "CO2 évité" },
       { value: "100%", label: "Filtres recyclables" },
     ],
     benefits: [
-      "Éliminez complètement les bouteilles plastique à usage unique",
+      "Éliminez complètement les bouteilles et leur logistique lourde",
       "Réduisez l'empreinte carbone liée au transport",
-      "Atteignez vos objectifs de développement durable et exigences RSE",
       "Attirez les clients soucieux de l'environnement",
       "Qualifiez-vous pour les certifications et labels verts",
     ],
     comparison: {
-      traditional: { price: "100 000+", label: "Bouteilles/an" },
+      traditional: { price: "3'000+", label: "Bouteilles/an" },
       idra: { price: "0", label: "Bouteilles nécessaires" },
     },
   },
@@ -90,11 +89,11 @@ const advantages = [
     color: "text-accent",
     bgColor: "bg-accent/10",
     description:
-      "Notre filtration avancée en 5 étapes garantit que chaque verre servi est cristallin, parfaitement pur, et sublime le goût de vos boissons et de votre cuisine.",
+      "Notre filtration avancée en 4 étapes garantit que chaque verre servi est cristallin, parfaitement pur, et sublime le goût de vos boissons et de votre cuisine.",
     stats: [
-      { value: "5 Étapes", label: "Filtration" },
+      { value: "4 Étapes", label: "Filtration" },
       { value: "99,9%", label: "Pureté" },
-      { value: "HACCP", label: "Certifié" },
+      { value: "NSF", label: "Certifié" },
     ],
     benefits: [
       "Filtration multi-étapes avancée éliminant les impuretés",
