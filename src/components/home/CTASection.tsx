@@ -83,9 +83,7 @@ export function CTASection() {
                 </a>
               </div>
 
-              <p className="text-sm text-primary-foreground/60 mt-6">
-                Nos équipes se tiennent à votre disposition
-              </p>
+              <p className="text-sm text-primary-foreground/60 mt-6">Nos équipes se tiennent à votre disposition.</p>
             </div>
           </div>
         </div>
