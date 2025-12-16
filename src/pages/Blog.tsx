@@ -64,6 +64,7 @@ const posts = [
     date: "28 octobre 2024",
     readTime: "6 min de lecture",
     category: "Technologie",
+    slug: "science-eau-parfaite-filtration",
   },
   {
     id: 7,
@@ -191,37 +192,41 @@ const Blog = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <article
-                key={post.id}
-                className="bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated group"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-card/90 backdrop-blur-sm text-xs font-medium text-foreground">
-                    {post.category}
-                  </span>
-                </div>
+            {posts.map((post) => {
+              const articleLink = post.slug ? `/blog/${post.slug}` : "#";
+              return (
+                <Link key={post.id} to={articleLink}>
+                  <article
+                    className="bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-elevated group h-full"
+                  >
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-card/90 backdrop-blur-sm text-xs font-medium text-foreground">
+                        {post.category}
+                      </span>
+                    </div>
 
-                <div className="p-6">
-                  <h3 className="font-display font-semibold text-lg text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                    {post.excerpt}
-                  </p>
+                    <div className="p-6">
+                      <h3 className="font-display font-semibold text-lg text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                        {post.excerpt}
+                      </p>
 
-                  <div className="flex items-center justify-between text-xs text-muted-foreground pt-4 border-t border-border">
-                    <span>{post.author}</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                </div>
-              </article>
-            ))}
+                      <div className="flex items-center justify-between text-xs text-muted-foreground pt-4 border-t border-border">
+                        <span>{post.author}</span>
+                        <span>{post.readTime}</span>
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Load More */}
