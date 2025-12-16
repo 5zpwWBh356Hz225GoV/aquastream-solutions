@@ -17,12 +17,11 @@ export function CTASection() {
             {/* Content */}
             <div className="text-primary-foreground">
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-                Prêt à Transformer Votre{" "}
-                <span className="text-water-medium">Service d'Eau ?</span>
+                Prêt à Transformer Votre <span className="text-water-medium">Service d'Eau ?</span>
               </h2>
               <p className="text-lg text-primary-foreground/80 mb-8">
-                Rejoignez des centaines de professionnels de l'hôtellerie qui ont fait le choix du changement. 
-                Obtenez un devis personnalisé adapté aux besoins de votre établissement.
+                Rejoignez des centaines de professionnels de l'hôtellerie qui ont fait le choix du changement. Obtenez
+                un devis personnalisé adapté aux besoins de votre établissement.
               </p>
 
               {/* Benefits list */}
@@ -55,10 +54,10 @@ export function CTASection() {
               <h3 className="font-display text-xl font-semibold text-primary-foreground mb-6">
                 Préférez-vous nous parler directement ?
               </h3>
-              
+
               <div className="space-y-6">
                 <a
-                  href="tel:+33123456789"
+                  href="tel:+41 3123456789"
                   className="flex items-center gap-4 p-4 rounded-xl bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center group-hover:scale-110 transition-transform">
