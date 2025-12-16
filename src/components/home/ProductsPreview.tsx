@@ -6,18 +6,6 @@ import undercounterImage from "@/assets/product-undercounter.jpg";
 
 const products = [
   {
-    id: "sparkling",
-    name: "Idra Sparkle",
-    tagline: "Excellence Comptoir",
-    description:
-      "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
-    image: sparklingImage,
-    features: ["Plate & Gazeuse", "Capacité 120L/heure", "Design compact", "Commandes tactiles"],
-    price: "À partir de 89 CHF/mois",
-    badge: "Le Plus Populaire",
-    href: "/products/sparkling",
-  },
-  {
     id: "undercounter",
     name: "Idra Pro",
     tagline: "Puissance Sous-Comptoir",
@@ -28,6 +16,18 @@ const products = [
     price: "À partir de 57 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
     href: "/products/filtered",
+  },
+  {
+    id: "sparkling",
+    name: "Idra Sparkle",
+    tagline: "Excellence Comptoir",
+    description:
+      "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
+    image: sparklingImage,
+    features: ["Plate & Gazeuse", "Capacité 120L/heure", "Design compact", "Commandes tactiles"],
+    price: "À partir de 89 CHF/mois",
+    badge: "Le Plus Populaire",
+    href: "/products/sparkling",
   },
 ];
 
