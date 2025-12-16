@@ -10,6 +10,7 @@ import Technology from "./pages/Technology";
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
+import BlogArticleFiltration from "./pages/BlogArticleFiltration";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/couts-caches-eau-bouteille-restaurants" element={<BlogArticle />} />
+          <Route path="/blog/science-eau-parfaite-filtration" element={<BlogArticleFiltration />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
