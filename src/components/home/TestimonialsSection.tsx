@@ -171,7 +171,7 @@ export function TestimonialsSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {[
             { value: "300+", label: "Clients Satisfaits" },
-            { value: "2,5M€+", label: "Économies Totales Générées" },
+            { value: "2,5M CHF+", label: "Économies Totales Générées" },
             { value: "900'000'+", label: "Bouteilles Éliminées par an" },
             { value: "98%", label: "Satisfaction Client" },
           ].map((stat) => (
