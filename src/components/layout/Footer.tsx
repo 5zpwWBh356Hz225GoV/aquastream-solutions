@@ -17,10 +17,6 @@ const footerLinks = {
   ],
   company: [
     {
-      name: "À Propos",
-      href: "/about",
-    },
-    {
       name: "Notre Technologie",
       href: "/technology",
     },
@@ -40,7 +36,7 @@ const footerLinks = {
     },
     {
       name: "Support Technique",
-      href: "/support",
+      href: "/maintenance",
     },
     {
       name: "Maintenance",
