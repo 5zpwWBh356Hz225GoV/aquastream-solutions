@@ -9,9 +9,10 @@ const products = [
     id: "sparkling",
     name: "Idra Sparkle",
     tagline: "Excellence Comptoir",
-    description: "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate, gazeuse et fraîche.",
+    description:
+      "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
     image: sparklingImage,
-    features: ["Plate & Gazeuse", "Capacité 40L/heure", "Design compact", "Commandes tactiles"],
+    features: ["Plate & Gazeuse", "Capacité 120L/heure", "Design compact", "Commandes tactiles"],
     price: "À partir de 89 CHF/mois",
     badge: "Le Plus Populaire",
     href: "/products/sparkling",
@@ -20,10 +21,11 @@ const products = [
     id: "undercounter",
     name: "Idra Pro",
     tagline: "Puissance Sous-Comptoir",
-    description: "Système sous-comptoir haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
+    description:
+      "Tireuse à eau ultra-filtrée haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
     image: undercounterImage,
-    features: ["Capacité 120L/heure", "Plusieurs robinets", "Monitoring à distance", "Auto-nettoyant"],
-    price: "À partir de 149 CHF/mois",
+    features: ["Capacité 240L/heure", "4 filtrations successives", "Robuste et élégant", "Nettoyage Facile"],
+    price: "À partir de 57 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
     href: "/products/filtered",
   },
@@ -39,11 +41,10 @@ export function ProductsPreview() {
             Nos Produits
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Des Solutions pour Chaque{" "}
-            <span className="text-gradient-ocean">Établissement</span>
+            Des Solutions pour Chaque <span className="text-gradient-ocean">Établissement</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Des cafés intimistes aux grandes chaînes hôtelières, nous avons la solution de distribution d'eau 
+            Des cafés intimistes aux grandes chaînes hôtelières, nous avons la solution de distribution d'eau
             parfaitement adaptée à vos besoins et votre budget.
           </p>
         </div>
@@ -72,12 +73,8 @@ export function ProductsPreview() {
               {/* Content */}
               <div className="p-8">
                 <span className="text-secondary text-sm font-medium">{product.tagline}</span>
-                <h3 className="font-display text-2xl font-bold text-foreground mt-1 mb-3">
-                  {product.name}
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  {product.description}
-                </p>
+                <h3 className="font-display text-2xl font-bold text-foreground mt-1 mb-3">{product.name}</h3>
+                <p className="text-muted-foreground mb-6">{product.description}</p>
 
                 {/* Features */}
                 <ul className="space-y-2 mb-6">
