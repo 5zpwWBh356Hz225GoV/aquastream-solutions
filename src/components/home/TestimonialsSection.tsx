@@ -170,9 +170,9 @@ export function TestimonialsSection() {
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {[
-            { value: "500+", label: "Clients Satisfaits" },
+            { value: "300+", label: "Clients Satisfaits" },
             { value: "2,5M€+", label: "Économies Totales Générées" },
-            { value: "25M+", label: "Bouteilles Éliminées" },
+            { value: "900'000'+", label: "Bouteilles Éliminées par an" },
             { value: "98%", label: "Satisfaction Client" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
