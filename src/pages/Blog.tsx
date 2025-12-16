@@ -172,10 +172,12 @@ const Blog = () => {
                 </span>
               </div>
 
-              <Button variant="ocean" size="lg">
-                Lire l'Article Complet
-                <ArrowRight className="w-5 h-5" />
-              </Button>
+              <Link to="/blog/couts-caches-eau-bouteille-restaurants">
+                <Button variant="ocean" size="lg">
+                  Lire l'Article Complet
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
