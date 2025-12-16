@@ -53,7 +53,7 @@ const benefits = [
   },
   {
     icon: Shield,
-    title: "Certifié Hygiène",
+    title: "Hygiène Certifiée",
     description:
       "Tous nos systèmes répondent aux normes d'hygiène alimentaire les plus strictes grâce à notre filtration et stérilisation UV.",
     stat: "NSF",
