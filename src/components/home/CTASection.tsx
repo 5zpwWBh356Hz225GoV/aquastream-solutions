@@ -84,7 +84,7 @@ export function CTASection() {
               </div>
 
               <p className="text-sm text-primary-foreground/60 mt-6">
-                Notre équipe répond généralement sous 2 heures pendant les heures ouvrables.
+                Nos équipes se tiennent à votre disposition
               </p>
             </div>
           </div>
