@@ -6,24 +6,23 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Accueil", href: "/" },
-  { 
-    name: "Produits", 
+  {
+    name: "Produits",
     href: "/products",
     children: [
       { name: "Fontaines Eau Gazeuse", href: "/products/sparkling" },
       { name: "Systèmes Eau Filtrée", href: "/products/filtered" },
-      { name: "Solutions Grande Capacité", href: "/products/high-capacity" },
-    ]
+    ],
   },
-  { 
-    name: "Avantages", 
+  {
+    name: "Avantages",
     href: "/advantages",
     children: [
       { name: "Économies", href: "/advantages#savings" },
       { name: "Écologie", href: "/advantages#ecology" },
       { name: "Logistique", href: "/advantages#logistics" },
       { name: "Qualité", href: "/advantages#quality" },
-    ]
+    ],
   },
   { name: "Technologie", href: "/technology" },
   { name: "Témoignages", href: "/testimonials" },
@@ -49,15 +48,13 @@ export function Header() {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-soft group-hover:shadow-elevated transition-shadow duration-300">
               <Droplets className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl text-foreground">
-              Idra
-            </span>
+            <span className="font-display font-bold text-xl text-foreground">Idra</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navigation.map((item) => (
-              <div 
+              <div
                 key={item.name}
                 className="relative"
                 onMouseEnter={() => item.children && setOpenDropdown(item.name)}
@@ -69,7 +66,7 @@ export function Header() {
                     "px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center gap-1",
                     isActive(item.href)
                       ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted",
                   )}
                 >
                   {item.name}
@@ -126,7 +123,7 @@ export function Header() {
                       "block px-4 py-3 rounded-lg text-base font-medium transition-colors",
                       isActive(item.href)
                         ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted",
                     )}
                     onClick={() => setMobileMenuOpen(false)}
                   >
