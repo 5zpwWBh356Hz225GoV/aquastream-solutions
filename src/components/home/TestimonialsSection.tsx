@@ -5,43 +5,47 @@ import restaurantScene from "@/assets/restaurant-scene.jpg";
 const testimonials = [
   {
     id: 1,
-    name: "Jean-Pierre Dubois",
+    name: "Jean-Pierre Kaufmann",
     role: "Chef Exécutif & Propriétaire",
-    company: "Le Petit Bistro, Paris",
+    company: "Nauchâtel",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
-    quote: "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12 000€ par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
+    quote:
+      "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12 000€ par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
     rating: 5,
-    savings: "12 400€/an",
+    savings: "12'400CHF/an",
   },
   {
     id: 2,
     name: "Sophie Laurent",
-    role: "Directrice Générale d'Hôtel",
-    company: "Grand Hôtel Riviera, Nice",
+    role: "Directrice Générale",
+    company: "Genève",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
-    quote: "Gérer la logistique de l'eau pour un hôtel de 200 chambres était un cauchemar. Idra a éliminé complètement le problème de stockage. Plus de palettes, plus de calendriers de livraison. Notre rapport développement durable n'a jamais été aussi bon.",
+    quote:
+      "Gérer la logistique de l'eau pour un établissement de 200 couverts était un cauchemar. Idra a éliminé complètement le problème de stockage. Plus de palettes, plus de calendriers de livraison. Notre rapport développement durable n'a jamais été aussi bon.",
     rating: 5,
-    savings: "28 000€/an",
+    savings: "28'000CHF/an",
   },
   {
     id: 3,
     name: "Marco Rossi",
     role: "Propriétaire",
-    company: "Café Milano, Lyon",
+    company: "Lugano",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    quote: "En tant que petit café, chaque euro compte. Le modèle compact de comptoir s'intègre parfaitement dans notre espace et se rentabilise en quelques mois. Les clients apprécient que nous soyons éco-responsables.",
+    quote:
+      "En tant que petit café, chaque euro compte. Le modèle compact de comptoir s'intègre parfaitement dans notre espace et se rentabilise dès la première semaine. Les clients apprécient que nous soyons éco-responsables.",
     rating: 5,
-    savings: "4 200€/an",
+    savings: "4'200CHF/an",
   },
   {
     id: 4,
-    name: "Claire Bernard",
-    role: "Directrice F&B",
-    company: "Château Events, Bordeaux",
+    name: "Claire Bernardino",
+    role: "Directrice",
+    company: "Montreux",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
-    quote: "Pour notre lieu de réception de mariages et événements, la présentation est primordiale. Le design élégant de la tour impressionne les invités tandis que la capacité illimitée gère même nos plus grands événements sans problème.",
+    quote:
+      "Pour notre lieu de réception de mariages et événements, la présentation est primordiale. Le design élégant s'intègre parfaitement à notre bar tandis que la capacité illimitée gère même nos plus grands événements sans problème.",
     rating: 5,
-    savings: "18 500€/an",
+    savings: "18'500CHF/an",
   },
 ];
 
@@ -62,11 +66,7 @@ export function TestimonialsSection() {
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0 opacity-5">
-        <img
-          src={restaurantScene}
-          alt=""
-          className="w-full h-full object-cover"
-        />
+        <img src={restaurantScene} alt="" className="w-full h-full object-cover" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -76,12 +76,11 @@ export function TestimonialsSection() {
             Témoignages Clients
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            La Confiance des{" "}
-            <span className="text-gradient-ocean">Leaders du Secteur</span>
+            La Confiance des <span className="text-gradient-ocean">Leaders du Secteur</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Découvrez comment les restaurants, hôtels et cafés à travers la France ont transformé 
-            leurs opérations avec Idra.
+            Découvrez comment les restaurants, hôtels et cafés à travers la France ont transformé leurs opérations avec
+            Idra.
           </p>
         </div>
 
@@ -120,17 +119,11 @@ export function TestimonialsSection() {
                 {/* Author info */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <div className="font-display font-semibold text-lg text-foreground">
-                      {current.name}
-                    </div>
-                    <div className="text-muted-foreground">
-                      {current.role}
-                    </div>
-                    <div className="text-primary text-sm font-medium">
-                      {current.company}
-                    </div>
+                    <div className="font-display font-semibold text-lg text-foreground">{current.name}</div>
+                    <div className="text-muted-foreground">{current.role}</div>
+                    <div className="text-primary text-sm font-medium">{current.company}</div>
                   </div>
-                  
+
                   {/* Savings badge */}
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-success/10 text-success font-semibold">
                     <span>Économie</span>
@@ -149,9 +142,7 @@ export function TestimonialsSection() {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentIndex
-                        ? "bg-primary w-8"
-                        : "bg-muted hover:bg-muted-foreground/30"
+                      index === currentIndex ? "bg-primary w-8" : "bg-muted hover:bg-muted-foreground/30"
                     }`}
                   />
                 ))}
@@ -185,9 +176,7 @@ export function TestimonialsSection() {
             { value: "98%", label: "Satisfaction Client" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-display font-bold text-primary mb-2">
-                {stat.value}
-              </div>
+              <div className="text-3xl lg:text-4xl font-display font-bold text-primary mb-2">{stat.value}</div>
               <div className="text-muted-foreground">{stat.label}</div>
             </div>
           ))}
