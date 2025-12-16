@@ -24,7 +24,7 @@ const products = [
     description:
       "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
     image: sparklingImage,
-    features: ["Plate & Gazeuse", "Capacité 120L/heure", "Design compact", "Commandes tactiles"],
+    features: ["Plate & Gazeuse", "Capacité 120L/heure", "Design compact", "Commandes intégrées"],
     price: "À partir de 89 CHF/mois",
     badge: "Le Plus Populaire",
     href: "/products/sparkling",
