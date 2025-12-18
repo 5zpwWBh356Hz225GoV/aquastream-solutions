@@ -25,7 +25,7 @@ const products = [
       capacity: "240L/heure",
       dimensions: "50 x 10 x 15 cm",
       power: "220V",
-      Filtration: "Sous comptoire",
+      filtration: "Sous comptoir",
     },
     price: "57 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
@@ -61,6 +61,7 @@ const specIcons: { [key: string]: React.ElementType } = {
   capacity: Gauge,
   dimensions: Droplets,
   power: Zap,
+  filtration: Droplets,
   co2: Thermometer,
 };
 
@@ -68,6 +69,7 @@ const specLabels: { [key: string]: string } = {
   capacity: "Capacité",
   dimensions: "Dimensions",
   power: "Puissance",
+  filtration: "Filtration",
   co2: "CO2",
 };
 
