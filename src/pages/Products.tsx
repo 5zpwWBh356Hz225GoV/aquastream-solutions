@@ -18,9 +18,7 @@ const products = [
       "3 filtrations successives",
       "Robuste et élégant",
       "Nettoyage Facile",
-      "Système de stérilisation UV",
       "Certifié NSF",
-      "Alertes état des filtres",
       "Construction qualité professionnelle",
     ],
     specs: {
