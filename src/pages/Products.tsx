@@ -9,7 +9,7 @@ const products = [
   {
     id: "filtered",
     name: "Idra Pro",
-    tagline: "Puissance Sous-Comptoir",
+    tagline: "Tireuse Sur Comptoir",
     description:
       "Tireuse à eau ultra-filtrée haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
     image: undercounterImage,
