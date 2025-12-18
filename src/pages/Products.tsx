@@ -25,7 +25,7 @@ const products = [
       capacity: "240L/heure",
       dimensions: "50 x 10 x 15 cm",
       power: "220V",
-      co2: "Compatible",
+      Filtration: "Sous comptoire",
     },
     price: "57 CHF/mois",
     badge: "Meilleur Rapport Qualité-Prix",
