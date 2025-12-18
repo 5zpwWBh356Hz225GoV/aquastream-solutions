@@ -141,7 +141,7 @@ const Contact = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-muted rounded-xl">
-                    <div className="text-2xl font-display font-bold text-primary">500+</div>
+                    <div className="text-2xl font-display font-bold text-primary">300+</div>
                     <div className="text-sm text-muted-foreground">Clients Satisfaits</div>
                   </div>
                   <div className="text-center p-4 bg-muted rounded-xl">
