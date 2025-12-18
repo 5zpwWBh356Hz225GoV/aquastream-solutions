@@ -10,7 +10,8 @@ const products = [
     id: "filtered",
     name: "Idra Pro",
     tagline: "Puissance Sous-Comptoir",
-    description: "Tireuse à eau ultra-filtrée haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
+    description:
+      "Tireuse à eau ultra-filtrée haute capacité pour restaurants et hôtels à forte activité. Rendement maximum avec encombrement minimal.",
     image: undercounterImage,
     features: [
       "Capacité 240L/heure",
@@ -34,8 +35,8 @@ const products = [
   {
     id: "sparkling",
     name: "Idra Sparkle",
-    tagline: "Excellence Comptoir",
-    description: "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
+    tagline: "Eau Gazeuse sur Comptoir",
+    description: "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau gazeuse.",
     image: sparklingImage,
     features: [
       "Plate & Gazeuse",
@@ -45,12 +46,12 @@ const products = [
       "Système de filtration 4 étapes",
       "Injection automatique de CO2",
       "Fonctionnement économe en énergie",
-      "Remplacement facile des filtres",
+      "Remplacement facile des cartouches",
     ],
     specs: {
       capacity: "120L/heure",
-      dimensions: "40 x 35 x 50 cm",
-      power: "220V / 300W",
+      dimensions: "40 x 20 x 50 cm",
+      power: "Sur secteur 220v",
       co2: "Cylindre 2kg (inclus)",
     },
     price: "85 CHF/mois",
@@ -83,12 +84,11 @@ const Products = () => {
               Nos Produits
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-foreground mb-6">
-              Solutions d'Eau Premium pour{" "}
-              <span className="text-gradient-ocean">Chaque Établissement</span>
+              Solutions d'Eau Premium pour <span className="text-gradient-ocean">Chaque Établissement</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Des unités compactes de comptoir aux systèmes haute capacité, trouvez la solution 
-              parfaitement adaptée aux besoins spécifiques de votre restaurant, hôtel ou café.
+              Des unités compactes de comptoir aux systèmes haute capacité, trouvez la solution parfaitement adaptée aux
+              besoins spécifiques de votre restaurant, hôtel ou café.
             </p>
           </div>
         </div>
@@ -113,11 +113,7 @@ const Products = () => {
                         {product.badge}
                       </span>
                     )}
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full max-w-md mx-auto"
-                    />
+                    <img src={product.image} alt={product.name} className="w-full max-w-md mx-auto" />
                   </div>
                 </div>
 
@@ -127,9 +123,7 @@ const Products = () => {
                   <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-2 mb-4">
                     {product.name}
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-8">
-                    {product.description}
-                  </p>
+                  <p className="text-lg text-muted-foreground mb-8">{product.description}</p>
 
                   {/* Features */}
                   <div className="grid sm:grid-cols-2 gap-3 mb-8">
@@ -182,8 +176,8 @@ const Products = () => {
             Vous ne savez pas quelle solution choisir ?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Nos experts vous aideront à choisir le système parfait en fonction de la taille 
-            de votre établissement, du volume et de vos exigences spécifiques.
+            Nos experts vous aideront à choisir le système parfait en fonction de la taille de votre établissement, du
+            volume et de vos exigences spécifiques.
           </p>
           <Link to="/contact">
             <Button variant="ocean" size="xl">
