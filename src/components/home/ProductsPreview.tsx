@@ -20,7 +20,7 @@ const products = [
   {
     id: "sparkling",
     name: "Idra Sparkle",
-    tagline: "Excellence Comptoir",
+    tagline: "Eau Gazeuse sur Comptoir",
     description:
       "Unité compacte de comptoir parfaite pour les cafés et petits restaurants. Délivre de l'eau plate et gazeuse.",
     image: sparklingImage,
