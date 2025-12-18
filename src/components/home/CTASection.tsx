@@ -65,7 +65,7 @@ export function CTASection() {
                   </div>
                   <div>
                     <div className="text-sm text-primary-foreground/70">Appelez-nous</div>
-                    <div className="text-lg font-semibold text-primary-foreground">+33 1 23 45 67 89</div>
+                    <div className="text-lg font-semibold text-primary-foreground">+41 1 23 45 67 89</div>
                   </div>
                 </a>
 
