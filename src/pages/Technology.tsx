@@ -4,26 +4,21 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Filter, Droplets, ShieldCheck, Sparkles, Thermometer, Gauge, Wifi, Leaf } from "lucide-react";
 const filtrationStages = [{
   stage: 1,
-  name: "Filtre à Sédiments",
-  description: "Élimine les particules, la rouille et le sable de plus de 5 microns, protégeant les filtres suivants et l'équipement.",
-  icon: Filter
-}, {
-  stage: 2,
   name: "Charbon Actif",
   description: "Élimine le chlore, les composés organiques et les goûts et odeurs désagréables pour une eau pure et propre.",
   icon: Droplets
 }, {
-  stage: 3,
-  name: "Osmose Inverse",
-  description: "Membrane ultra-fine filtrant les solides dissous, métaux lourds et contaminants jusqu'à 0,0001 micron.",
+  stage: 2,
+  name: "Anti Calcaire",
+  description: "Protège contre les dépôts de calcaire et adoucit l'eau pour préserver vos équipements et améliorer le goût.",
   icon: Sparkles
 }, {
-  stage: 4,
-  name: "Enrichissement Minéral",
-  description: "Réintroduit un équilibre minéral optimal pour un goût parfait et des bienfaits pour la santé.",
-  icon: Thermometer
+  stage: 3,
+  name: "Ultrafiltration",
+  description: "Membrane haute performance filtrant les bactéries, micro-organismes et particules fines jusqu'à 0,01 micron.",
+  icon: Filter
 }, {
-  stage: 5,
+  stage: 4,
   name: "Stérilisation UV",
   description: "Détruit 99,99% des bactéries et virus par lumière ultraviolette pour une sécurité microbiologique totale.",
   icon: ShieldCheck
@@ -86,9 +81,9 @@ const Technology = () => {
       {/* Filtration Process */}
       <section className="section-padding">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              Système de Filtration en 5 Étapes
+              Système de Filtration en 4 Étapes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Chaque étape cible des contaminants spécifiques, assurant une purification complète 
@@ -101,7 +96,7 @@ const Technology = () => {
             {/* Connection line */}
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-success transform -translate-y-1/2 z-0" />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
               {filtrationStages.map((stage, index) => <div key={stage.stage} className="bg-card rounded-2xl p-6 border border-border shadow-soft hover:shadow-elevated transition-shadow text-center">
                   {/* Stage number */}
                   <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold mx-auto mb-4">
