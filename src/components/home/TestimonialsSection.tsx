@@ -10,7 +10,7 @@ const testimonials = [
     company: "Neuchâtel",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
     quote:
-      "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12 000€ par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
+      "Passer à Idra a été l'une des meilleures décisions pour notre restaurant. Nous économisons plus de 12'000CHF par an et nos clients adorent la qualité de l'eau plate et gazeuse. L'installation a été parfaite et le support est excellent.",
     rating: 5,
     savings: "12'400CHF/an",
   },
